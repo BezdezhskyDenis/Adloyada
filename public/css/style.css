@@ -4,7 +4,13 @@ font-family: 'Pattaya', sans-serif;
 font-family: 'Roboto', sans-serif;
  */
 @import url("https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto&display=swap");
-h1, h2, h3, h4, h5, h6, .navbar a {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar a {
   font-family: "Pattaya", sans-serif;
 }
 
@@ -12,8 +18,14 @@ p {
   font-family: "Roboto", sans-serif;
 }
 
-a.nav-link:hover {
-  background-color: #9453A6;
+nav a.nav-link:hover {
+  background-color: #9453a6;
+  border-radius: 38px;
+}
+
+footer a:hover {
+  background-color: #f2cc0f;
+  border-radius: 38px;
 }
 
 li > a.dropdown-item {
