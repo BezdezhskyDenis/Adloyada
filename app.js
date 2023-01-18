@@ -11,26 +11,38 @@ $("li").on("mouseout", function () {
 });
 
 $("a").on("click", function () {
-  var userChose = $(this).attr("id");
+  var userChose = $(this).attr("name");
   switch (userChose) {
     case "adloyada":
-      $(this).attr("target", "_blank");
       $(this).attr("href", "/");
       break;
-    case "a":
-      tom2.play();
+    case "meyEden":
+      $(this).attr("target", "_blank");
+      $(this).attr("href", "https://www.meyeden.co.il/");
       break;
-    case "s":
-      tom3.play();
+    case "beer":
+    $(this).attr("target", "_blank");
+      $(this).attr("href", "https://en.tempo.co.il/brands/gold-star/");
       break;
-    case "d":
-      tom4.play();
+    case "borger":
+    $(this).attr("target", "_blank");
+      $(this).attr("href", "https://app.burgeranch.co.il/");
       break;
-    case "j":
-      crash.play();
+    case "pizza":
+      $(this).attr("target", "_blank");
+      $(this).attr("href", "https://easy.co.il/page/10052918");
       break;
-    case "k":
-      kickBass.play();
+    case "azriely":
+      $(this).attr("target", "_blank");
+      $(this).attr("href", "https://www.azrieli.com/");
+      break;
+    case "spaHolon":
+      $(this).attr("target", "_blank");
+      $(this).attr("href", "https://spat-holon.business.site/");
+      break;
+    case "osem":
+      $(this).attr("target", "_blank");
+      $(this).attr("href", "https://www.osem-nestle.co.il/");
       break;
     case "l":
       snare.play();
@@ -40,17 +52,30 @@ $("a").on("click", function () {
   }
 });
 
-$(window).resize(function () {
-  const viewportWidth = $(window).width();
-  const viewportHeight = $(window).height();
+// $(document).ready(function() {
+//   const viewportWidth = $(window).width();
+//   const viewportHeight = $(window).height();
 
-  if (viewportWidth < 1000){
-    $('#carouselExampleAutoplaying').addClass('w-100');
-    $('#carouselExampleAutoplaying').removeClass('w-75');
-  } else {
-    $('#carouselExampleAutoplaying').addClass('w-75');
-    $('#carouselExampleAutoplaying').removeClass('w-100');
-  }
-  console.log(viewportHeight, viewportWidth);
-  $('#ww').text(viewportWidth)
-});
+//   if (viewportWidth < 1000){
+//     $('#carouselExampleAutoplaying').addClass('w-75');
+//     $('#carouselExampleAutoplaying').removeClass('w-50');
+//   } else {
+//     $('#carouselExampleAutoplaying').addClass('w-50');
+//     $('#carouselExampleAutoplaying').removeClass('w-75');
+//   }
+// });
+
+// $(window).resize(function () {
+//   const viewportWidth = $(window).width();
+//   const viewportHeight = $(window).height();
+
+//   if (viewportWidth < 1200){
+//     $('#carouselExampleAutoplaying').addClass('w-75');
+//     $('#carouselExampleAutoplaying').removeClass('w-50');
+//   } else {
+//     $('#carouselExampleAutoplaying').addClass('w-50');
+//     $('#carouselExampleAutoplaying').removeClass('w-75');
+//   }
+//   // console.log(viewportHeight, viewportWidth);
+//   // $('#ww').text(viewportWidth)
+// });

@@ -24,7 +24,7 @@
       src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"
       charset="utf-8"
     ></script>
-    <title>Document</title>
+    <title>העדלאידע</title>
   </head>
   <body>
     <header class="sticky-top">
@@ -53,7 +53,7 @@
                 <a
                   class="nav-link active text-success fs-3"
                   aria-current="page"
-                  id="adloyada"
+                  name="adloyada"
                   href="#"
                   >העדלאידע</a
                 >
@@ -61,7 +61,7 @@
               <li class="nav-item dropdown mx-2 border-bottom">
                 <a
                   class="nav-link active text-success fs-3"
-                  id="sponsors"
+                  name="sponsors"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -71,44 +71,44 @@
                 </a>
                 <ul class="dropdown-menu ms-auto">
                   <li>
-                    <a class="dropdown-item fs-5" id="meyEden" href="#"
+                    <a class="dropdown-item fs-5" name="meyEden" href="#"
                       >מי עדן</a
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item fs-5" id="beer" href="#"
+                    <a class="dropdown-item fs-5" name="beer" href="#"
                       >בירת גולדסטאר</a
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item fs-5" id="borger" href="#"
-                      >בוגרראנץ</a
+                    <a class="dropdown-item fs-5" name="borger" href="#"
+                      >בורגראנץ</a
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item fs-5" id="pizza" href="#"
+                    <a class="dropdown-item fs-5" name="pizza" href="#"
                       >פיצה תרשיש</a
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item fs-5" id="azriely" href="#"
+                    <a class="dropdown-item fs-5" name="azriely" href="#"
                       >עזריאלי</a
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item fs-5" id="spaHolon" href="#"
+                    <a class="dropdown-item fs-5" name="spaHolon" href="#"
                       >ספאט חולון</a
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item fs-5" id="osem" href="#">אסם</a>
+                    <a class="dropdown-item fs-5" name="osem" href="#">אסם</a>
                   </li>
                 </ul>
               </li>
               <li class="nav-item dropdown mx-2 border-bottom">
                 <a
                   class="nav-link active text-success fs-3"
-                  id="information"
+                  name="information"
                   href="#"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -118,20 +118,20 @@
                 </a>
                 <ul class="dropdown-menu ms-auto">
                   <li>
-                    <a class="dropdown-item fs-5" id="hotels" href="#"
+                    <a class="dropdown-item fs-5" name="hotels" href="#"
                       >מלונות</a
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item fs-5" id="bars" href="#">ברים</a>
+                    <a class="dropdown-item fs-5" name="bars" href="#">ברים</a>
                   </li>
                   <li>
-                    <a class="dropdown-item fs-5" id="parking" href="#"
+                    <a class="dropdown-item fs-5" name="parking" href="#"
                       >חניונים</a
                     >
                   </li>
                   <li>
-                    <a class="dropdown-item fs-5" id="roads" href="#"
+                    <a class="dropdown-item fs-5" name="roads" href="#"
                       >דרכי הגעה</a
                     >
                   </li>
@@ -140,7 +140,7 @@
               <li class="nav-item mx-2 border-bottom">
                 <a
                   class="nav-link active text-success fs-3"
-                  id="gallary"
+                  name="gallary"
                   href="#"
                   >גלריה</a
                 >
@@ -148,7 +148,7 @@
               <li class="nav-item mx-2 border-bottom">
                 <a
                   class="nav-link active text-success fs-3"
-                  id="contactUs"
+                  name="contactUs"
                   href="#"
                   >צור קשר</a
                 >
@@ -159,122 +159,236 @@
       </nav>
     </header>
     <main>
-      <div
-        id="carouselExampleAutoplaying"
-        class="carousel slide w-75 mx-auto"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide-to="3"
-            aria-label="Slide 4"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleAutoplaying"
-            data-bs-slide-to="4"
-            aria-label="Slide 5"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="./public/images/adloyada-holon-2022.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h1>פורים 2022 חגיגות עדלאידע</h1>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./public/images/adloyada-holon-2022-2.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h1>פורים 2022 חגיגות עדלאידע</h1>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./public/images/Screenshot_51.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h1>פורים 2019 חגיגות עדלאידע</h1>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./public/images/Screenshot_31.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h1>פורים 2018 חגיגות עדלאידע</h1>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./public/images/5a964bb923de6_DDDD.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h1>פורים 2017 חגיגות עדלאידע</h1>
-            </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="prev"
+      <div class="container-fluid main-container w-75">
+        <div
+          id="carouselExampleAutoplaying"
+          class="carousel slide mx-auto"
+          data-bs-ride="carousel"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleAutoplaying"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <div class="container mt-5 px-5 mx-3">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleAutoplaying"
+              data-bs-slide-to="4"
+              aria-label="Slide 5"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./public/images/adloyada-holon-2022.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h1>פורים 2022 חגיגות עדלאידע</h1>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./public/images/adloyada-holon-2022-2.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h1>פורים 2022 חגיגות עדלאידע</h1>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./public/images/Screenshot_51.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h1>פורים 2019 חגיגות עדלאידע</h1>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./public/images/Screenshot_31.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h1>פורים 2018 חגיגות עדלאידע</h1>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./public/images/5a964bb923de6_DDDD.jpg"
+                class="d-block w-100"
+                alt="..."
+              />
+              <div class="carousel-caption d-none d-md-block">
+                <h1>פורים 2017 חגיגות עדלאידע</h1>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
         <div class="row">
-          <div class="col-12" dir="rtl">
-            <div class="title display-4">העדלאידע</div>
-            <div class="paragraf fs-3">העדלאידע</div>
-
+          <div class="col" dir="rtl">
+            <div class="title display-4 mt-4">העדלאידע</div>
+            <div class="paragraf fs-4 mt-4">
+              תהלוכת פורים הגדולה במדינה מתקיימת מידי שנה בעיר חולון והיא מהווה
+              שיאה של פעילות קהילתית וארגונית המתרחשת במהלך השנה ומתעצמת לקראת
+              החג.
+            </div>
+            <div class="paragraf fs-4 mt-4">
+              בתהלוכה, אשר מתמקדת בכל פעם בנושא מרכזי שונה, נוטלים חלק אלפי
+              צועדים, ביניהם: תלמידי בתי הספר בחולון, משתתפי החוגים במרכזים
+              הקהילתיים ובמרכזי התרבות והספורט, להקות של מתעמלים, פעלולנים
+              ואקרובטים, קבוצות מנגנים ורקדנים, קבוצות תיאטרון רחוב, וכמובן
+              מיצגי ענק ססגוניים, המהווים את החלק המרגש והמרשים במיוחד. לצד
+              הצועדים מחולון משתתפים בעדלאידע צועדים אורחים מרחבי הארץ ולעיתים
+              אף מהעולם.
+            </div>
+            <div class="paragraf fs-4 mt-4">
+              העדלאידע צועדת לאורך רחובותיה המרכזיים של חולון לעיני מאות אלפי
+              צופים מכל הגילאים. לרוב מסתיימת הצעדה במופע ובמסיבת רחוב צבעונית
+              ועליזה במיוחד ברחבה שמול העירייה. מתום העדלאידע ועד לסיום חג
+              הפורים מוצבים ברחבת המדיטק המיצגים שהשתתפו בתהלוכה להנאת העוברים
+              והשבים.
+            </div>
+            <div class="paragraf fs-4 mt-4"><a href="#" name="information">
+              להמשך קריאה ומפת התהלוכה לחץ כאן
+            </a>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid align-items-center" dir="rtl">
+          <div class="title display-4 my-5">ממנים</div>
+          <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+              <div class="card h-100">
+                <a href="https://www.meyeden.co.il/" target="_blank"
+                  ><img src="https://th.bing.com/th/id/OIP.rlPgGRtbN1SeBU_2vvfGxwHaHa?w=162&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="card-img-top" alt="..." /></a>
+                <div class="card-body">
+                  <h4 class="card-title">מי עדן</h4>
+                  <p class="card-text">
+                    מי עדן גאה ושמחה לספק לכם מגוון פתרונות שתייה עד הבית או המשרד, במסלולים שונים המותאמים במיוחד לצרכים שלכם! 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+              <div class="card h-100">
+                <a href="https://en.tempo.co.il/brands/gold-star/" target="_blank"
+                  ><img src="https://th.bing.com/th/id/OIP._uG_Jt-YxnYv6zE9M_XmewHaEK?w=294&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="card-img-top" alt="..." /></a>
+                <div class="card-body">
+                  <h5 class="card-title">בירת גולדסטאר</h5>
+                  <p class="card-text">גולדסטאר הקלאסית שכולנו מכירים ואוהבים, עם אותו מתכון כבר 50 שנה.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+              <div class="card h-100">
+                <a href="https://app.burgeranch.co.il/" target="_blank"
+                  ><img src="https://res.cloudinary.com/hljdjmqlh/image/upload/ar_1:1,c_fill,f_auto,fl_lossy,q_auto/v1545561283/ovfmgpcgztny6hr9o0qk.png" class="card-img-top" alt="..." /></a>
+                <div class="card-body">
+                  <h5 class="card-title">בורגראנץ</h5>
+                  <p class="card-text">
+                    רשת ההמבורגרים הישראלית הוותיקה בישראל, נוסדה בשנת 1972 והפכה עד מהרה למותג מועדף בישראל עם סניפים בכל רחבי הארץ.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+              <div class="card h-100">
+                <a href="https://easy.co.il/page/10052918" target="_blank"
+                  ><img src="https://media.easy.co.il/images/UserPics/10052918_1607426940304_1.jpeg" class="card-img-top" alt="..." /></a>
+                <div class="card-body">
+                  <h5 class="card-title">פיצה תרשיש</h5>
+                  <p class="card-text">
+                    מסעדה איטלקית בעלת מנות מיוחדות ומגוונות. אצלנו תוכלו למצוא מגוון רחב של סלטים בהרכבה אישית, פסטות איכותיות, וכמוןב שאת הפיצה הכי טובה בעיר! 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+              <div class="card h-100">
+                <a href="https://www.azrieli.com/" target="_blank"
+                  ><img src="https://www.azrieliholon.co.il/wp-content/uploads/2019/04/cropped-G11.jpg" class="card-img-top" alt="..." /></a>
+                <div class="card-body">
+                  <h5 class="card-title">עזריאלי</h5>
+                  <p class="card-text">
+                    עזריאלי חולון - פארק עסקים ומתחם מסחר ובילוי
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+              <div class="card h-100">
+                <a href="https://spat-holon.business.site/" target="_blank"
+                  ><img src="https://lh3.googleusercontent.com/p/AF1QipOmzPhsuE_no2yGigpPmma8AJpUr0_OXndYXnc=w1080-h608-p-no" class="card-img-top" alt="..." /></a>
+                <div class="card-body">
+                  <h5 class="card-title">ספאט חולון</h5>
+                  <p class="card-text">
+                    בית מלון בחולון פתוח 24 שעות בקשת הצעת מחיר התקשרות אל 03-551-1959
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-8">
+              <div class="card h-100">
+                <a href="https://www.osem-nestle.co.il/" target="_blank"
+                  ><img
+                    src="https://th.bing.com/th/id/R.5861f6143ebcc755fc11497450869b9a?rik=p7xN538AJlxhww&riu=http%3a%2f%2fwww.sderonet.co.il%2fwp-content%2fuploads%2f2017%2f02%2f%D7%90%D7%A1%D7%9D.png&ehk=D6gfQBEWSAEv4VV2XJ5vrJ5IxZbfviadErSBjrmORX8%3d&risl=&pid=ImgRaw&r=0"
+                    class="card-img-top"
+                    alt="..."
+                /></a>
+                <div class="card-body">
+                  <h5 class="card-title">אסם</h5>
+                  <p class="card-text">
+                    אסם-נסטלה היא קבוצת מזון ישראלית המייצרת ומשווקת מגוון רחב של מוצרים בסטנדרטים הגבוהים ביותר.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -283,18 +397,18 @@
       <footer class="py-3 my-4">
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <li class="nav-item">
-            <a id="faqs" href="#" class="nav-link px-2 text-muted">FAQs</a>
+            <a name="faqs" href="#" class="nav-link px-2 text-muted">FAQs</a>
           </li>
           <li class="nav-item">
-            <a id="information" href="#" class="nav-link px-2 text-muted"
+            <a href="#" name="information" class="nav-link px-2 text-muted"
               >מידע שימושי</a
             >
           </li>
           <li class="nav-item">
-            <a id="sponsors" href="#" class="nav-link px-2 text-muted">ממנים</a>
+            <a href="#" name="sponsors" class="nav-link px-2 text-muted">ממנים</a>
           </li>
           <li class="nav-item">
-            <a id="adloyada" href="#" class="nav-link px-2 text-muted"
+            <a href="#" name="adloyada" class="nav-link px-2 text-muted"
               >עמוד ראשי</a
             >
           </li>
