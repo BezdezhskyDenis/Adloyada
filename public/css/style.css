@@ -1,0 +1,29 @@
+/* 
+font-family: 'Henny Penny', cursive;
+font-family: 'Pattaya', sans-serif;
+font-family: 'Roboto', sans-serif;
+ */
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto&display=swap");
+h1, h2, h3, h4, h5, h6, .navbar a {
+  font-family: "Pattaya", sans-serif;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+a.nav-link:hover {
+  background-color: #9453A6;
+}
+
+li > a.dropdown-item {
+  text-align: right;
+}
+
+ul.dropdown-menu {
+  width: auto;
+}
+
+a.navbar-brand > img {
+  width: 60%;
+}/*# sourceMappingURL=style.css.map */
