@@ -39,3 +39,17 @@ $("a").on("click", function () {
       break;
   }
 });
+
+$(window).resize(function () {
+  const viewportWidth = $(window).width();
+  const viewportHeight = $(window).height();
+
+  if (viewportWidth < 1000){
+    $('#carouselExampleAutoplaying').addClass('w-100');
+    $('#carouselExampleAutoplaying').removeClass('w-75');
+  } else {
+    $('#carouselExampleAutoplaying').addClass('w-75');
+    $('#carouselExampleAutoplaying').removeClass('w-100');
+  }
+  console.log(viewportHeight, viewportWidth)
+});

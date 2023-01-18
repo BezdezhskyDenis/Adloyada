@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./public/bootstrap/bootstrap-5.3.0-alpha1/scss/bootstrap.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="./public/bootstrap/bootstrap-5.3.0-alpha1/scss/bootstrap.css"
+    />
     <link rel="stylesheet" href="./public/css/style.css" />
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
@@ -18,105 +27,281 @@
     <title>Document</title>
   </head>
   <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-          <div class="container-fluid bg-primary">
-            <a class="navbar-brand pt-3" href="#"
-              ><img src="./public/images/Holon_logo.png" alt="Holon Logo"
-            /></a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarScroll"
-              aria-controls="navbarScroll"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid bg-primary">
+          <a class="navbar-brand pt-3" href="#"
+            ><img src="./public/images/Holon_logo.png" alt="Holon Logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
-            </button>
-  
-            <div class="collapse navbar-collapse" id="navbarScroll" dir="rtl">
-              <ul
-                class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll fs-4 me-5"
-              >
-                <li class="nav-item mx-2 border-bottom">
-                  <a
-                    class="nav-link active text-success fs-3"
-                    aria-current="page"
-                    id="adloyada"
-                    href="#"
-                    >העדלאידע</a
-                  >
-                </li>
-                <li class="nav-item dropdown mx-2 border-bottom">
-                  <a
-                    class="nav-link active text-success fs-3"
-                    id="sponsors"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    ממנים
-                  </a>
-                  <ul class="dropdown-menu ms-auto">
-                    <li><a class="dropdown-item fs-5" id="meyEden" href="#">מי עדן</a></li>
-                    <li>
-                      <a class="dropdown-item fs-5" id="beer" href="#">בירת גולדסטאר</a>
-                    </li>
-                    <li><a class="dropdown-item fs-5" id="borger" href="#">בוגרראנץ</a></li>
-                    <li><a class="dropdown-item fs-5" id="pizza" href="#">פיצה תרשיש</a></li>
-                    <li><a class="dropdown-item fs-5" id="azriely" href="#">עזריאלי</a></li>
-                    <li><a class="dropdown-item fs-5" id="spaHolon" href="#">ספאט חולון</a></li>
-                    <li><a class="dropdown-item fs-5" id="osem" href="#">אסם</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item dropdown mx-2 border-bottom">
-                  <a
-                    class="nav-link active text-success fs-3"
-                    id="information"
-                    href="#"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    מידע שימושי
-                  </a>
-                  <ul class="dropdown-menu ms-auto">
-                    <li><a class="dropdown-item fs-5" id="hotels" href="#">מלונות</a></li>
-                    <li><a class="dropdown-item fs-5" id="bars" href="#">ברים</a></li>
-                    <li><a class="dropdown-item fs-5" id="parking" href="#">חניונים</a></li>
-                    <li><a class="dropdown-item fs-5" id="roads" href="#">דרכי הגעה</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item mx-2 border-bottom">
-                  <a class="nav-link active text-success fs-3" id="gallary" href="#">גלריה</a>
-                </li>
-                <li class="nav-item mx-2 border-bottom">
-                  <a class="nav-link active text-success fs-3" id="contactUs" href="#"
-                    >צור קשר</a
-                  >
-                </li>
-              </ul>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarScroll" dir="rtl">
+            <ul
+              class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll fs-4 me-5"
+            >
+              <li class="nav-item mx-2 border-bottom">
+                <a
+                  class="nav-link active text-success fs-3"
+                  aria-current="page"
+                  id="adloyada"
+                  href="#"
+                  >העדלאידע</a
+                >
+              </li>
+              <li class="nav-item dropdown mx-2 border-bottom">
+                <a
+                  class="nav-link active text-success fs-3"
+                  id="sponsors"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  ממנים
+                </a>
+                <ul class="dropdown-menu ms-auto">
+                  <li>
+                    <a class="dropdown-item fs-5" id="meyEden" href="#"
+                      >מי עדן</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" id="beer" href="#"
+                      >בירת גולדסטאר</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" id="borger" href="#"
+                      >בוגרראנץ</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" id="pizza" href="#"
+                      >פיצה תרשיש</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" id="azriely" href="#"
+                      >עזריאלי</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" id="spaHolon" href="#"
+                      >ספאט חולון</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" id="osem" href="#">אסם</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown mx-2 border-bottom">
+                <a
+                  class="nav-link active text-success fs-3"
+                  id="information"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  מידע שימושי
+                </a>
+                <ul class="dropdown-menu ms-auto">
+                  <li>
+                    <a class="dropdown-item fs-5" id="hotels" href="#"
+                      >מלונות</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" id="bars" href="#">ברים</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" id="parking" href="#"
+                      >חניונים</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" id="roads" href="#"
+                      >דרכי הגעה</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item mx-2 border-bottom">
+                <a
+                  class="nav-link active text-success fs-3"
+                  id="gallary"
+                  href="#"
+                  >גלריה</a
+                >
+              </li>
+              <li class="nav-item mx-2 border-bottom">
+                <a
+                  class="nav-link active text-success fs-3"
+                  id="contactUs"
+                  href="#"
+                  >צור קשר</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide w-75 mx-auto"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="./public/images/adloyada-holon-2022.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1>פורים 2022 חגיגות עדלאידע</h1>
             </div>
           </div>
-        </nav>
-      </header>
-      <main>
-        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-      </main>
-        <div class="container">
-          <footer class="py-3 my-4">
-            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-              <li class="nav-item"><a id="faqs" href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-              <li class="nav-item"><a id="information" href="#" class="nav-link px-2 text-muted">מידע שימושי</a></li>
-              <li class="nav-item"><a id="sponsors" href="#" class="nav-link px-2 text-muted">ממנים</a></li>
-              <li class="nav-item"><a id="adloyada" href="#" class="nav-link px-2 text-muted">עמוד ראשי</a></li>
-            </ul>
-            <p class="text-center text-muted">© 2023 Denis Bezdezhsky</p>
-          </footer>
+          <div class="carousel-item">
+            <img
+              src="./public/images/adloyada-holon-2022-2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1>פורים 2022 חגיגות עדלאידע</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./public/images/Screenshot_51.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1>פורים 2019 חגיגות עדלאידע</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./public/images/Screenshot_31.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1>פורים 2018 חגיגות עדלאידע</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="./public/images/5a964bb923de6_DDDD.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h1>פורים 2017 חגיגות עדלאידע</h1>
+            </div>
+          </div>
         </div>
-    </body>
-    <script src="./app.js"></script>
-  </html>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container mt-5 px-5 mx-3">
+        <div class="row">
+          <div class="col-12" dir="rtl">
+            <div class="title display-4">העדלאידע</div>
+            <div class="paragraf fs-3">העדלאידע</div>
+
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a id="faqs" href="#" class="nav-link px-2 text-muted">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a id="information" href="#" class="nav-link px-2 text-muted"
+              >מידע שימושי</a
+            >
+          </li>
+          <li class="nav-item">
+            <a id="sponsors" href="#" class="nav-link px-2 text-muted">ממנים</a>
+          </li>
+          <li class="nav-item">
+            <a id="adloyada" href="#" class="nav-link px-2 text-muted"
+              >עמוד ראשי</a
+            >
+          </li>
+        </ul>
+        <p class="text-center text-muted">© 2023 Denis Bezdezhsky</p>
+      </footer>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>
