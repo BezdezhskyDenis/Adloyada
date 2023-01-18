@@ -51,5 +51,6 @@ $(window).resize(function () {
     $('#carouselExampleAutoplaying').addClass('w-75');
     $('#carouselExampleAutoplaying').removeClass('w-100');
   }
-  console.log(viewportHeight, viewportWidth)
+  console.log(viewportHeight, viewportWidth);
+  $('#ww').text(viewportWidth)
 });
