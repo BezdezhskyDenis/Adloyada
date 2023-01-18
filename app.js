@@ -10,11 +10,11 @@ $("li").on("mouseout", function () {
   $(this).children().removeClass("show");
 });
 
-$("a").on("touchstart click", function () {
+$("a").on("touchend touchstart tap click", function () {
   var userChose = $(this).attr("name");
   switch (userChose) {
     case "adloyada":
-      $(this).attr("href", "/");
+      $(this).attr("href", "./");
       break;
     case "meyEden":
       $(this).attr("target", "_blank");
