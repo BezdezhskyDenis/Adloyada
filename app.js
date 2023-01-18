@@ -10,7 +10,7 @@ $("li").on("mouseout", function () {
   $(this).children().removeClass("show");
 });
 
-$("a").on("click", function () {
+$("a").on("touchstart click", function () {
   var userChose = $(this).attr("name");
   switch (userChose) {
     case "adloyada":
