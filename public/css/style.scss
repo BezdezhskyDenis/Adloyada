@@ -37,12 +37,18 @@ nav a.nav-link:hover {
   background-color: $secondary;
   border-radius: 38px;
 }
+nav a.nav-link {
+  border-radius: 38px;
+}
 
 footer a:hover {
   background-color: $info;
   border-radius: 38px;
-
 }
+footer a {
+  border-radius: 38px;
+}
+
 li > a.dropdown-item {
   text-align: right;
 }
@@ -55,41 +61,42 @@ a.navbar-brand > img {
   width: 60%;
 }
 
-div.title{
-        color: $green;
-        font-weight: bold;
-    }
-
-div.paragraf{
-    color: $secondary;
-        font-weight: bold;
+div.title {
+  color: $green;
+  font-weight: bold;
 }
 
-.sponsors div{
-    height: 200px;
+div.paragraf {
+  color: $secondary;
+  font-weight: bold;
 }
 
-.my-galeri{
-    display: flex;
-    height: 35rem;
-    gap: 1rem;
+.sponsors div {
+  height: 200px;
 }
 
-.my-galeri > div{
-    flex: 1;
-    border-radius: 1rem;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-    transition: all .8s cubic-bezier(.25, .4, .45, 1.4);
+.my-galeri {
+  display: flex;
+  height: 35rem;
+  gap: 1rem;
+}
+
+.my-galeri > div {
+  flex: 1;
+  border-radius: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  transition: all 0.8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
 }
 
 .my-galeri > div:hover {
-    flex: 5;
+  flex: 5;
 }
-.my-galeri .secondary-card{
-    text-align: center;
-    color: $white;
-    position: relative;
-    top: 29rem;
+.my-galeri .secondary-card {
+  text-align: center;
+  color: $white;
+  position: relative;
+  top: 29rem;
 }
+

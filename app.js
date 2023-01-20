@@ -16,16 +16,28 @@ $("a").on("touchend touchstart tap click", function () {
     case "adloyada":
       $(this).attr("href", "./");
       break;
+    case "sponsors":
+      $(this).attr("href", "./");
+      break;
+    case "information":
+      $(this).attr("href", "./about.html");
+      break;
+    case "gallery":
+      $(this).attr("href", "./");
+      break;
+    case "contactUs":
+      $(this).attr("href", "./contactUs.html");
+      break;
     case "meyEden":
       $(this).attr("target", "_blank");
       $(this).attr("href", "https://www.meyeden.co.il/");
       break;
     case "beer":
-    $(this).attr("target", "_blank");
+      $(this).attr("target", "_blank");
       $(this).attr("href", "https://en.tempo.co.il/brands/gold-star/");
       break;
     case "borger":
-    $(this).attr("target", "_blank");
+      $(this).attr("target", "_blank");
       $(this).attr("href", "https://app.burgeranch.co.il/");
       break;
     case "pizza":
@@ -44,29 +56,40 @@ $("a").on("touchend touchstart tap click", function () {
       $(this).attr("target", "_blank");
       $(this).attr("href", "https://www.osem-nestle.co.il/");
       break;
-    case "l":
-      snare.play();
+    case "hotels":
+      $(this).attr("href", "./");
+      break;
+    case "bars":
+      $(this).attr("href", "./");
+      break;
+    case "parking":
+      $(this).attr("href", "./");
+      break;
+    case "roads":
+      $(this).attr("href", "./");
+      break;
+      case "faqs":
+      $(this).attr("href", "./");
       break;
     default:
       break;
   }
 });
 
-$(document).ready(function() {
+$(document).ready(function () {
   const viewportWidth = $(window).width();
   // const viewportHeight = $(window).height();
 
-  if (viewportWidth < 1300){
-    $('#galleryContainer').addClass('w-100 ');
-    $('#galleryContainer').removeClass('w-75');
-    $('#firstContainer').addClass('visually-hidden');
-    $('#carouselExampleAutoplaying').removeClass('visually-hidden');
-
+  if (viewportWidth < 1300) {
+    $("#galleryContainer").addClass("w-100 ");
+    $("#galleryContainer").removeClass("w-75");
+    $("#firstContainer").addClass("visually-hidden");
+    $("#carouselExampleAutoplaying").removeClass("visually-hidden");
   } else {
-    $('#galleryContainer').addClass('w-75');
-    $('#galleryContainer').removeClass('w-100');
-    $('#firstContainer').removeClass('visually-hidden');
-    $('#carouselExampleAutoplaying').addClass('visually-hidden');
+    $("#galleryContainer").addClass("w-75");
+    $("#galleryContainer").removeClass("w-100");
+    $("#firstContainer").removeClass("visually-hidden");
+    $("#carouselExampleAutoplaying").addClass("visually-hidden");
   }
 });
 
@@ -74,17 +97,16 @@ $(window).resize(function () {
   const viewportWidth = $(window).width();
   // const viewportHeight = $(window).height();
 
-  if (viewportWidth < 1300){
-    $('#galleryContainer').addClass('w-100 ');
-    $('#galleryContainer').removeClass('w-75');
-    $('#firstContainer').addClass('visually-hidden');
-    $('#carouselExampleAutoplaying').removeClass('visually-hidden');
-
+  if (viewportWidth < 1300) {
+    $("#galleryContainer").addClass("w-100 ");
+    $("#galleryContainer").removeClass("w-75");
+    $("#firstContainer").addClass("visually-hidden");
+    $("#carouselExampleAutoplaying").removeClass("visually-hidden");
   } else {
-    $('#galleryContainer').addClass('w-75');
-    $('#galleryContainer').removeClass('w-100');
-    $('#firstContainer').removeClass('visually-hidden');
-    $('#carouselExampleAutoplaying').addClass('visually-hidden');
+    $("#galleryContainer").addClass("w-75");
+    $("#galleryContainer").removeClass("w-100");
+    $("#firstContainer").removeClass("visually-hidden");
+    $("#carouselExampleAutoplaying").addClass("visually-hidden");
   }
   // console.log(viewportHeight, viewportWidth);
   // $('#ww').text(viewportWidth)

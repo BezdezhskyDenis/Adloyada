@@ -23,8 +23,16 @@ nav a.nav-link:hover {
   border-radius: 38px;
 }
 
+nav a.nav-link {
+  border-radius: 38px;
+}
+
 footer a:hover {
   background-color: #f2cc0f;
+  border-radius: 38px;
+}
+
+footer a {
   border-radius: 38px;
 }
 
