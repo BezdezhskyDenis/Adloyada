@@ -52,30 +52,40 @@ $("a").on("touchend touchstart tap click", function () {
   }
 });
 
-// $(document).ready(function() {
-//   const viewportWidth = $(window).width();
-//   const viewportHeight = $(window).height();
+$(document).ready(function() {
+  const viewportWidth = $(window).width();
+  // const viewportHeight = $(window).height();
 
-//   if (viewportWidth < 1000){
-//     $('#carouselExampleAutoplaying').addClass('w-75');
-//     $('#carouselExampleAutoplaying').removeClass('w-50');
-//   } else {
-//     $('#carouselExampleAutoplaying').addClass('w-50');
-//     $('#carouselExampleAutoplaying').removeClass('w-75');
-//   }
-// });
+  if (viewportWidth < 1300){
+    $('#galleryContainer').addClass('w-100 ');
+    $('#galleryContainer').removeClass('w-75');
+    $('#firstContainer').addClass('visually-hidden');
+    $('#carouselExampleAutoplaying').removeClass('visually-hidden');
 
-// $(window).resize(function () {
-//   const viewportWidth = $(window).width();
-//   const viewportHeight = $(window).height();
+  } else {
+    $('#galleryContainer').addClass('w-75');
+    $('#galleryContainer').removeClass('w-100');
+    $('#firstContainer').removeClass('visually-hidden');
+    $('#carouselExampleAutoplaying').addClass('visually-hidden');
+  }
+});
 
-//   if (viewportWidth < 1200){
-//     $('#carouselExampleAutoplaying').addClass('w-75');
-//     $('#carouselExampleAutoplaying').removeClass('w-50');
-//   } else {
-//     $('#carouselExampleAutoplaying').addClass('w-50');
-//     $('#carouselExampleAutoplaying').removeClass('w-75');
-//   }
-//   // console.log(viewportHeight, viewportWidth);
-//   // $('#ww').text(viewportWidth)
-// });
+$(window).resize(function () {
+  const viewportWidth = $(window).width();
+  // const viewportHeight = $(window).height();
+
+  if (viewportWidth < 1300){
+    $('#galleryContainer').addClass('w-100 ');
+    $('#galleryContainer').removeClass('w-75');
+    $('#firstContainer').addClass('visually-hidden');
+    $('#carouselExampleAutoplaying').removeClass('visually-hidden');
+
+  } else {
+    $('#galleryContainer').addClass('w-75');
+    $('#galleryContainer').removeClass('w-100');
+    $('#firstContainer').removeClass('visually-hidden');
+    $('#carouselExampleAutoplaying').addClass('visually-hidden');
+  }
+  // console.log(viewportHeight, viewportWidth);
+  // $('#ww').text(viewportWidth)
+});

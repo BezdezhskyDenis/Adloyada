@@ -52,4 +52,30 @@ div.paragraf {
 
 .sponsors div {
   height: 200px;
+}
+
+.my-galeri {
+  display: flex;
+  height: 35rem;
+  gap: 1rem;
+}
+
+.my-galeri > div {
+  flex: 1;
+  border-radius: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  transition: all 0.8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+}
+
+.my-galeri > div:hover {
+  flex: 5;
+}
+
+.my-galeri .secondary-card {
+  text-align: center;
+  color: #f2f2f2;
+  position: relative;
+  top: 29rem;
 }/*# sourceMappingURL=style.css.map */
