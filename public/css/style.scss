@@ -100,3 +100,6 @@ div.paragraf {
   top: 29rem;
 }
 
+.form-floating > input::selection, .form-floating > textarea::selection{
+background-color: $green;
+}

@@ -86,4 +86,12 @@ div.paragraf {
   color: #f2f2f2;
   position: relative;
   top: 29rem;
+}
+
+.form-floating > input::-moz-selection, .form-floating > textarea::-moz-selection {
+  background-color: #8cbf3f;
+}
+
+.form-floating > input::selection, .form-floating > textarea::selection {
+  background-color: #8cbf3f;
 }/*# sourceMappingURL=style.css.map */
