@@ -29,8 +29,8 @@
   <body>
     <header class="sticky-top">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid bg-primary">
-          <a class="navbar-brand pt-3" href="./"
+        <div class="container-fluid bg-primary p-3" id="navExpend">
+          <a class="navbar-brand pt-3" href="./" id="logoExpend"
             ><img src="./public/images/Holon_logo.png" alt="Holon Logo"
           /></a>
           <button
@@ -311,7 +311,32 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-        <div class="row mt-5">
+
+        <div class="clock">
+          <div id="adloyadaCountdown" class="is-countdown">
+            <h3>ימים לעדלאידע</h3>
+            <span class="countdown-row countdown-show4">
+              <span class="countdown-section"
+                ><span class="countdown-amount" id="clockDay"></span
+                ><span class="countdown-period">ימים</span></span
+              >
+              <span class="countdown-section"
+                ><span class="countdown-amount" id="clockHours"></span
+                ><span class="countdown-period">שעות</span></span
+              >
+              <span class="countdown-section"
+                ><span class="countdown-amount" id="clockMinutes"></span
+                ><span class="countdown-period">דקות</span></span
+              >
+              <span class="countdown-section"
+                ><span class="countdown-amount" id="clockSeconds"></span
+                ><span class="countdown-period">שניות</span></span
+              >
+            </span>
+          </div>
+        </div>
+
+        <div class="row mt-5 bg-info pb-3">
           <div class="col" dir="rtl">
             <div class="title display-4 mt-4">העדלאידע</div>
             <div class="paragraf fs-4 mt-4">

@@ -85,11 +85,18 @@ $(document).ready(function () {
     $("#galleryContainer").removeClass("w-75");
     $("#firstContainer").addClass("visually-hidden");
     $("#carouselExampleAutoplaying").removeClass("visually-hidden");
+    $("#navExpend").removeClass("p-3");
+    $("#logoExpend").addClass("navbar-brand");
+    $("#logoExpend").removeClass("logo");
+
   } else {
     $("#galleryContainer").addClass("w-75");
     $("#galleryContainer").removeClass("w-100");
     $("#firstContainer").removeClass("visually-hidden");
     $("#carouselExampleAutoplaying").addClass("visually-hidden");
+    $("#navExpend").addClass("p-3");
+    $("#logoExpend").removeClass("navbar-brand");
+    $("#logoExpend").addClass("logo");
   }
 });
 
@@ -102,12 +109,40 @@ $(window).resize(function () {
     $("#galleryContainer").removeClass("w-75");
     $("#firstContainer").addClass("visually-hidden");
     $("#carouselExampleAutoplaying").removeClass("visually-hidden");
+    $("#navExpend").removeClass("p-3");
+    $("#logoExpend").addClass("navbar-brand");
+    $("#logoExpend").removeClass("logo");
   } else {
     $("#galleryContainer").addClass("w-75");
     $("#galleryContainer").removeClass("w-100");
     $("#firstContainer").removeClass("visually-hidden");
     $("#carouselExampleAutoplaying").addClass("visually-hidden");
+    $("#navExpend").addClass("p-3");
+    $("#logoExpend").removeClass("navbar-brand");
+    $("#logoExpend").addClass("logo");
+
   }
   // console.log(viewportHeight, viewportWidth);
   // $('#ww').text(viewportWidth)
 });
+
+
+
+
+// Set the date we're counting down to
+const countDownDate = new Date("Mar 6, 2023 09:30:00").getTime();
+
+setInterval( ()=> {
+  const now = new Date().getTime();
+  const distance = countDownDate - now;
+    
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  $('#clockDay').text(days);
+  $('#clockHours').text(hours);
+  $('#clockMinutes').text(minutes);
+  $('#clockSeconds').text(seconds);
+}, 1000);
