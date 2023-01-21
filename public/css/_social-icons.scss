@@ -1,0 +1,94 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+$basic-dark-color: #212121;
+$basic-light-color: #fff;
+$fb-color: #3b5998;
+$telegram-color: #00aced;
+$youtube: #dd4b39;
+$tr: #5a9234;
+$insta: #bc2a8d;
+$border-radius: 10px;
+$font-size: 25px;
+
+.socialContainer {
+  margin: 20px auto 0px auto;
+  text-align: center;
+}
+
+.effect {
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  .buttons {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  a {
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+.effect {
+   a {
+    text-decoration: none !important;
+    color: $basic-light-color;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: $border-radius;
+    margin-right: 20px;
+    font-size: $font-size;
+    overflow: hidden;
+    position: relative;
+    
+    i {
+      position: relative;
+      z-index: 3;
+    }
+    
+    &.fb {
+      background-color: $fb-color;
+    }
+    
+    &.telegram {
+      background-color: $telegram-color;
+    }
+    
+    &.youtube {
+      background-color: $youtube;
+    }
+    
+    &.tr {
+      background-color: $tr;
+      content: '\f262';
+    }
+    &.insta {
+      background-color: $insta;
+    }
+
+  }
+}
+
+/* aeneas effect */
+
+.effect.aeneas {
+  
+  a {
+    transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
+    
+    i {
+      transition: transform 0.4s linear 0s;
+    }
+    
+    &:hover {
+      transform: rotate(360deg);
+      border-radius: 50%;
+      
+      i {
+        transform: rotate(-360deg);
+      }
+    }
+  }
+}

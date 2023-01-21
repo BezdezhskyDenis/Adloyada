@@ -3,7 +3,76 @@ font-family: 'Henny Penny', cursive;
 font-family: 'Pattaya', sans-serif;
 font-family: 'Roboto', sans-serif;
  */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Henny+Penny&family=Pattaya&family=Roboto&display=swap");
+.socialContainer {
+  margin: 20px auto 0px auto;
+  text-align: center;
+}
+
+.effect {
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+}
+.effect .buttons {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.effect a:last-child {
+  margin-right: 0px;
+}
+
+.effect a {
+  text-decoration: none !important;
+  color: #fff;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-right: 20px;
+  font-size: 25px;
+  overflow: hidden;
+  position: relative;
+}
+.effect a i {
+  position: relative;
+  z-index: 3;
+}
+.effect a.fb {
+  background-color: #3b5998;
+}
+.effect a.telegram {
+  background-color: #00aced;
+}
+.effect a.youtube {
+  background-color: #dd4b39;
+}
+.effect a.tr {
+  background-color: #5a9234;
+  content: "\f262";
+}
+.effect a.insta {
+  background-color: #bc2a8d;
+}
+
+/* aeneas effect */
+.effect.aeneas a {
+  transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
+}
+.effect.aeneas a i {
+  transition: transform 0.4s linear 0s;
+}
+.effect.aeneas a:hover {
+  transform: rotate(360deg);
+  border-radius: 50%;
+}
+.effect.aeneas a:hover i {
+  transform: rotate(-360deg);
+}
+
 h1,
 h2,
 h3,
@@ -63,7 +132,12 @@ div.title {
   font-weight: bold;
 }
 
-div.paragraf {
+div.paragraph {
+  color: #9453a6;
+  font-weight: bold;
+}
+
+.paragraph a:hover {
   color: #9453a6;
   font-weight: bold;
 }
@@ -102,7 +176,8 @@ div.paragraf {
   background-color: #8cbf3f;
 }
 
-.form-floating > input::selection, .form-floating > textarea::selection {
+.form-floating > input::selection,
+.form-floating > textarea::selection {
   background-color: #8cbf3f;
 }
 
@@ -173,4 +248,9 @@ div.paragraf {
   font-weight: bold;
   color: #f2f2f2;
   text-shadow: 1px 1px 5px black;
+}
+
+.navbar {
+  padding-block: 0;
+  margin-bottom: 8px;
 }/*# sourceMappingURL=style.css.map */

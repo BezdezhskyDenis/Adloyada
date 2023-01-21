@@ -24,8 +24,12 @@
     <header class="sticky-top">
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid bg-primary p-3" id="navExpend">
-          <a class="navbar-brand pt-3" href="./"
-            id="logoExpend"><img src="./public/images/Holon_logo.png" alt="Holon Logo"
+          <a
+            class="navbar-brand pt-3"
+            href="https://www.holon.muni.il/Pages/default.aspx"
+            id="logoExpend"
+            target="_blank"
+            ><img src="./public/images/Holon_logo.png" alt="Holon Logo"
           /></a>
           <button
             class="navbar-toggler"
@@ -169,7 +173,10 @@
           </div>
           <div class="col-lg-4 col-md-6 col-sm-12 my-3 fs-4">
             <h2>טלפונים ליצירת קשר</h2>
-            <p >טל': 03-5027222 <br> פקס: 03-6511851​</p>
+            <p>
+              טל': 03-5027222 <br />
+              פקס: 03-6511851​
+            </p>
           </div>
           <div class="col-lg-4 col-md-6 col-sm-8 my-3">
             <div class="container-fluid">
@@ -177,58 +184,110 @@
               <form action="" method="post">
                 <div class="form-floating mb-3">
                   <input
-                  type="text"
-                  class="form-control"
-                  id="fullName"
-                  name="fullName"
-                  placeholder=">שם מלא"
-                  required
+                    type="text"
+                    class="form-control"
+                    id="firstName"
+                    name="firstName"
+                    placeholder=">שם פרטי"
+                    required
                   />
-                  <label for="fullName">שם מלא</label>
+                  <label for="fullName">שם פרטי</label>
                 </div>
                 <div class="form-floating mb-3">
                   <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                  name="email"
-                  placeholder="name@example.com"
-                  required
+                    type="text"
+                    class="form-control"
+                    id="lastName"
+                    name="lastName"
+                    placeholder=">שם משפחה"
+                    required
+                  />
+                  <label for="fullName">שם משפחה</label>
+                </div>
+                <div class="form-floating mb-3">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="name@example.com"
+                    required
                   />
                   <label for="email">דואר אלקטרוני</label>
                 </div>
                 <div class="form-floating mb-3">
                   <input
-                  type="number"
-                  class="form-control"
-                  placeholder="טלפון נייד"
-                  id="phoneNumber"
-                  name="phoneNumber"
-                  required
+                    type="number"
+                    class="form-control"
+                    placeholder="טלפון נייד"
+                    id="phoneNumber"
+                    name="phoneNumber"
+                    required
                   />
                   <label for="phoneNumber">טלפון ליצירת קשר</label>
                 </div>
                 <div class="form-floating mb-3">
                   <textarea
-                  class="form-control"
-                  placeholder="Leave a comment here"
-                  id="floatingTextarea2Disabled"
-                  style="height: 100px"
-                  required
+                    class="form-control"
+                    placeholder="Leave a comment here"
+                    id="floatingTextarea2Disabled"
+                    style="height: 100px"
+                    required
                   ></textarea>
                   <label for="floatingTextarea2Disabled">תיאור הפנייה</label>
                 </div>
                 <div class="col text-end">
-                  <button class="btn btn-primary" type="submit">שלך פנייה</button>
+                  <button class="btn btn-primary" type="submit">
+                    שלך פנייה
+                  </button>
                 </div>
               </form>
-              </div>
             </div>
           </div>
         </div>
+      </div>
     </main>
     <div class="container">
       <footer class="py-3 my-4">
+        <div class="effect aeneas">
+          <div class="buttons">
+            <a
+              href="https://www.facebook.com/holon.muni/"
+              target="_blank"
+              class="fb"
+              title="Join us on Facebook"
+              ><i class="fa fa-facebook" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://t.me/holonmuni"
+              target="_blank"
+              class="telegram"
+              title="Join us on Telegram"
+              ><i class="fa fa-telegram" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/user/HolonMunicipality"
+              target="_blank"
+              class="youtube"
+              title="Join us on Youtube"
+              ><i class="fa fa-youtube" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/holon.muni/?igshid=zb0iddlodcfs"
+              target="_blank"
+              class="insta"
+              title="Join us on Instagram"
+              ><i class="fa fa-instagram" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://www.tripadvisor.com/Tourism-g1010800-Holon_Tel_Aviv_District-Vacations.html"
+              target="_blank"
+              class="tr"
+              title="Join us on Tripadvisor"
+              ><i class="fa fa-tripadvisor" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
         <ul class="nav justify-content-center border-bottom pb-3 mb-3">
           <li class="nav-item">
             <a name="faqs" href="#" class="nav-link px-2 text-muted">FAQs</a>

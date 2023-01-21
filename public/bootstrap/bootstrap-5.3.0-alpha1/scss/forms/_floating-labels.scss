@@ -67,7 +67,8 @@
   > .form-select {
     ~ label {
       opacity: $form-floating-label-opacity;
-      transform: $form-floating-label-transform;
+      // transform: $form-floating-label-transform;
+      transform: translateY(-0.8rem) translateX(0.15rem);
     }
   }
   // Duplicated because `:-webkit-autofill` invalidates other selectors when grouped

@@ -3,7 +3,7 @@ font-family: 'Henny Penny', cursive;
 font-family: 'Pattaya', sans-serif;
 font-family: 'Roboto', sans-serif;
  */
-
+ @import "social-icons";
 $white: #f2f2f2;
 $black: #0d0d0d;
 $yellow: #f2cc0f;
@@ -62,13 +62,13 @@ a.logo > img {
 }
 
 a.navbar-brand > img {
-    width: 50%;
+  width: 50%;
 }
 
-.logo{
-position: absolute;
-top: 8px;
-left: 20px;
+.logo {
+  position: absolute;
+  top: 8px;
+  left: 20px;
 }
 
 div.title {
@@ -76,7 +76,11 @@ div.title {
   font-weight: bold;
 }
 
-div.paragraf {
+div.paragraph {
+  color: $secondary;
+  font-weight: bold;
+}
+.paragraph a:hover {
   color: $secondary;
   font-weight: bold;
 }
@@ -110,71 +114,77 @@ div.paragraf {
   top: 29rem;
 }
 
-.form-floating > input::selection, .form-floating > textarea::selection{
-background-color: $green;
+.form-floating > input::selection,
+.form-floating > textarea::selection {
+  background-color: $green;
 }
 
 .clock {
-    margin-top: 50px;
-    margin-inline: auto;
-    position: relative;
-    display: block;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    width: 250px;
-    height: 100%;
-    text-align: center;
-    transition: .6s;
+  margin-top: 50px;
+  margin-inline: auto;
+  position: relative;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 250px;
+  height: 100%;
+  text-align: center;
+  transition: 0.6s;
 }
 
 .is-countdown {
-    text-transform: uppercase;
-    text-align: center;
-    padding: 3px 10px 25px;
-    background: $purple;
-    border-radius: 20px;
-    margin-bottom: 30%;
-    transition: background 2s;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 3px 10px 25px;
+  background: $purple;
+  border-radius: 20px;
+  margin-bottom: 30%;
+  transition: background 2s;
 }
 
 .countdown-row {
-    display: inline-block;
-    clear: both;
-    width: 100%;
-    padding: 0;
-    text-align: center;
+  display: inline-block;
+  clear: both;
+  width: 100%;
+  padding: 0;
+  text-align: center;
 }
 .countdown-section {
-    position: relative;
-    float: left;
-    display: inline;
-    width: 50px;
-    height: 2.1em;
-    margin: 0 1.5% 0 1.5%;
-    font-size: 1em;
-    text-align: center;
-    color: $black;
-    background: $white;
-    border-radius: 3px;
+  position: relative;
+  float: left;
+  display: inline;
+  width: 50px;
+  height: 2.1em;
+  margin: 0 1.5% 0 1.5%;
+  font-size: 1em;
+  text-align: center;
+  color: $black;
+  background: $white;
+  border-radius: 3px;
 }
 .countdown-amount {
-    display: block;
-    font-size: 1.4em;
-    line-height: 1.4em;
-    font-family: 'Oswald',sans-serif;
-    font-weight: bold;
+  display: block;
+  font-size: 1.4em;
+  line-height: 1.4em;
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
 }
-.countdown-section .countdown-period{
-    margin-top: 7px;
-    display: block;
-    font-size: 1rem;
-    font-weight: bold;
-    color: $white;
-    text-shadow: 1px 1px 5px black;
+.countdown-section .countdown-period {
+  margin-top: 7px;
+  display: block;
+  font-size: 1rem;
+  font-weight: bold;
+  color: $white;
+  text-shadow: 1px 1px 5px black;
 }
-.clock h3{
-    font-weight: bold;
-    color: $white;
-    text-shadow: 1px 1px 5px black;
+.clock h3 {
+  font-weight: bold;
+  color: $white;
+  text-shadow: 1px 1px 5px black;
+}
+
+.navbar {
+  padding-block: 0;
+  margin-bottom: 8px;
 }
