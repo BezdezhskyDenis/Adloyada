@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./public/bootstrap/bootstrap-5.3.0-alpha1/scss/bootstrap.css"
+    />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      charset="utf-8"
+    ></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid bg-primary p-3" id="navExpend">
+          <a
+            class="navbar-brand pt-3"
+            href="https://www.holon.muni.il/Pages/default.aspx"
+            id="logoExpend"
+            target="_blank"
+            ><img src="./public/images/Holon_logo.png" alt="Holon Logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarScroll" dir="rtl">
+            <ul
+              class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll fs-4 me-5"
+            >
+              <li class="nav-item mx-2 border-bottom">
+                <a
+                  class="nav-link active text-success fs-3"
+                  aria-current="page"
+                  name="adloyada"
+                  href="#"
+                  >העדלאידע</a
+                >
+              </li>
+              <li class="nav-item dropdown mx-2 border-bottom">
+                <a
+                  class="nav-link active text-success fs-3"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  ממנים
+                </a>
+                <ul class="dropdown-menu ms-auto">
+                  <li>
+                    <a class="dropdown-item fs-5" name="sponsors" href="#"
+                      >איזור לממנים</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" name="meyEden" href="#"
+                      >מי עדן</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" name="beer" href="#"
+                      >בירת גולדסטאר</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" name="borger" href="#"
+                      >בורגראנץ</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" name="pizza" href="#"
+                      >פיצה תרשיש</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" name="azriely" href="#"
+                      >עזריאלי</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" name="spaHolon" href="#"
+                      >ספאט חולון</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" name="osem" href="#">אסם</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown mx-2 border-bottom">
+                <a
+                  class="nav-link active text-success fs-3"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  מידע שימושי
+                </a>
+                <ul class="dropdown-menu ms-auto">
+                  <li>
+                    <a class="dropdown-item fs-5" name="information" href="#"
+                      >מידע כללי</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" name="hotels" href="#"
+                      >מלונות</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" name="bars" href="#">ברים</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" name="parking" href="#"
+                      >חניונים</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" name="roads" href="#"
+                      >דרכי הגעה</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" name="faqs" href="#"
+                      >שאלות ותשובות</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item mx-2 border-bottom">
+                <a
+                  class="nav-link active text-success fs-3"
+                  name="gallery"
+                  href="#"
+                  >גלריה</a
+                >
+              </li>
+              <li class="nav-item mx-2 border-bottom">
+                <a
+                  class="nav-link active text-success fs-3"
+                  name="contactUs"
+                  href="#"
+                  >צור קשר</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container justify-content-center text-center" dir="rtl">
+        <div class="gallery aeneas">
+          <div class="buttons">
+            <a href="#" class="pic" title="תמונות">
+              <i class="" aria-hidden="true">
+                <img src="./public/images/5a96434c99e3b_BBBB.jpg" alt="" />
+              </i>
+            </a>
+          </div>
+        </div>
+        <div class="fs-1 text-primary">תמונות</div>
+        <div class="gallery aeneas">
+          <div class="buttons">
+            <a href="#" class="pic" title="וידיאו">
+              <i class="" aria-hidden="true">
+                <img src="./public/images/OIP.jpeg" alt="" />
+              </i>
+            </a>
+          </div>
+        </div>
+        <div class="fs-1 text-primary">וידיאו</div>
+      </div>
+      <div class="image-container container-fluid justify-content-center mx-3">
+        <div class="row justify-content-center">
+          <div class="col-xxl-3 col-xl-4 col-sm-6 mb-3 h-50">
+            <div class="card text-bg-dark">
+              <img
+                src="https://th.bing.com/th/id/OIP.LPd9Wnzbk_g6OG0Uer3YTwHaEK?w=297&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                class="card-img"
+                alt="..."
+                onclick="openModal();currentSlide(1)"
+              />
+              <div class="card-img-overlay">
+                <!-- <h5 class="card-title">Card title</h5> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-3 col-xl-4 col-sm-6 mb-3 h-50">
+            <div class="card text-bg-dark">
+              <img
+                src="https://th.bing.com/th/id/OIP.kP_ZFGOJWJyNXFYrgtkEywHaE6?w=251&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                class="card-img"
+                alt="..."
+                onclick="openModal();currentSlide(2)"
+              />
+              <div class="card-img-overlay">
+                <!-- <h5 class="card-title">Card title</h5> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-3 col-xl-4 col-sm-6 mb-3">
+            <div class="card text-bg-dark">
+              <img
+                src="https://th.bing.com/th/id/OIP.vQXEDBsx5gAXMfaYE_1lQgHaE8?w=238&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                class="card-img"
+                alt="..."
+                onclick="openModal();currentSlide(3)"
+              />
+              <div class="card-img-overlay">
+                <!-- <h5 class="card-title">Card title</h5> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-3 col-xl-4 col-sm-6 mb-3">
+            <div class="card text-bg-dark">
+              <img
+                src="https://th.bing.com/th/id/OIP.g2Z0Q_SfJGsNWNqSovOWXAHaE8?w=233&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                class="card-img"
+                alt="..."
+                onclick="openModal();currentSlide(4)"
+              />
+              <div class="card-img-overlay">
+                <!-- <h5 class="card-title">Card title</h5> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-3 col-xl-4 col-sm-6 mb-3">
+            <div class="card text-bg-dark">
+              <img
+                src="https://th.bing.com/th/id/OIP.HjAX_W8jwk2fJKNI1cegaQHaEi?w=249&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                class="card-img"
+                alt="..."
+              />
+              <div class="card-img-overlay">
+                <!-- <h5 class="card-title">Card title</h5> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-3 col-xl-4 col-sm-6 mb-3">
+            <div class="card text-bg-dark">
+              <img
+                src="https://th.bing.com/th/id/OIP.fYTY1GGug6xktiDXksQ5sQHaFj?w=234&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                class="card-img"
+                alt="..."
+              />
+              <div class="card-img-overlay">
+                <!-- <h5 class="card-title">Card title</h5> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-3 col-xl-4 col-sm-6 mb-3">
+            <div class="card text-bg-dark">
+              <img
+                src="https://th.bing.com/th/id/OIP.jkjIkr6vhok_8UTG--KE3QHaE8?w=243&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                class="card-img"
+                alt="..."
+              />
+              <div class="card-img-overlay">
+                <!-- <h5 class="card-title">Card title</h5> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-3 col-xl-4 col-sm-6 mb-3">
+            <div class="card text-bg-dark">
+              <img
+                src="https://th.bing.com/th/id/R.1de0e46970726c44d790603015b58400?rik=cwTq9%2fdWSiR%2blQ&pid=ImgRaw&r=0"
+                class="card-img"
+                alt="..."
+              />
+              <div class="card-img-overlay">
+                <!-- <h5 class="card-title">Card title</h5> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-3 col-xl-4 col-sm-6 mb-3">
+            <div class="card text-bg-dark">
+              <img
+                src="https://th.bing.com/th/id/OIP.GfcobMuVQStrjcu5tQZ37AHaF7?w=229&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                class="card-img"
+                alt="..."
+              />
+              <div class="card-img-overlay">
+                <!-- <h5 class="card-title">Card title</h5> -->
+              </div>
+            </div>
+          </div>
+          <div class="col-xxl-3 col-xl-4 col-sm-6 mb-3">
+            <div class="card text-bg-dark">
+              <img
+                src="https://i.ytimg.com/vi/YlgCXMvqRmI/maxresdefault.jpg"
+                class="hover-shadow card-img"
+              />
+              <div class="card-img-overlay">
+                <!-- <h5 class="card-title">Card title</h5> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="row">
+        <div class="column">
+          <img src="https://i.ytimg.com/vi/YlgCXMvqRmI/maxresdefault.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="img2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="img3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="img4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+        </div>
+      </div> -->
+
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+          <div class="mySlides">
+            <div class="numbertext">1 / 4</div>
+            <img
+              src="https://th.bing.com/th/id/OIP.LPd9Wnzbk_g6OG0Uer3YTwHaEK?w=297&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 4</div>
+            <img
+              src="https://th.bing.com/th/id/OIP.kP_ZFGOJWJyNXFYrgtkEywHaE6?w=251&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 4</div>
+            <img
+              src="https://th.bing.com/th/id/OIP.vQXEDBsx5gAXMfaYE_1lQgHaE8?w=238&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+              style="width: 100%"
+            />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 4</div>
+            <img
+              src="https://th.bing.com/th/id/OIP.g2Z0Q_SfJGsNWNqSovOWXAHaE8?w=233&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+              style="width: 100%"
+            />
+          </div>
+
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+          <!-- Caption text -->
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>
+
+          <!-- Thumbnail image controls -->
+          <div class="column">
+            <img
+              class="demo"
+              src="img1.jpg"
+              onclick="currentSlide(1)"
+              alt="Nature"
+            />
+          </div>
+
+          <div class="column">
+            <img
+              class="demo"
+              src="img2.jpg"
+              onclick="currentSlide(2)"
+              alt="Snow"
+            />
+          </div>
+
+          <div class="column">
+            <img
+              class="demo"
+              src="img3.jpg"
+              onclick="currentSlide(3)"
+              alt="Mountains"
+            />
+          </div>
+
+          <div class="column">
+            <img
+              class="demo"
+              src="img4.jpg"
+              onclick="currentSlide(4)"
+              alt="Lights"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="container">
+      <footer class="py-3 my-4">
+        <div class="effect aeneas">
+          <div class="buttons">
+            <a
+              href="https://www.facebook.com/holon.muni/"
+              target="_blank"
+              class="fb"
+              title="Join us on Facebook"
+              ><i class="fa fa-facebook" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://t.me/holonmuni"
+              target="_blank"
+              class="telegram"
+              title="Join us on Telegram"
+              ><i class="fa fa-telegram" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/user/HolonMunicipality"
+              target="_blank"
+              class="youtube"
+              title="Join us on Youtube"
+              ><i class="fa fa-youtube" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/holon.muni/?igshid=zb0iddlodcfs"
+              target="_blank"
+              class="insta"
+              title="Join us on Instagram"
+              ><i class="fa fa-instagram" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://www.tripadvisor.com/Tourism-g1010800-Holon_Tel_Aviv_District-Vacations.html"
+              target="_blank"
+              class="tr"
+              title="Join us on Tripadvisor"
+              ><i class="fa fa-tripadvisor" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a name="faqs" href="#" class="nav-link px-2 text-muted">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" name="information" class="nav-link px-2 text-muted"
+              >מידע שימושי</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" name="sponsors" class="nav-link px-2 text-muted"
+              >ממנים</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" name="adloyada" class="nav-link px-2 text-muted"
+              >עמוד ראשי</a
+            >
+          </li>
+        </ul>
+        <p class="text-center text-muted">© Created by 2023 Denis Bezdezhsky</p>
+        <h1 id="ww"></h1>
+      </footer>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>

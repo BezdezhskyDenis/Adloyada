@@ -4,6 +4,7 @@ font-family: 'Pattaya', sans-serif;
 font-family: 'Roboto', sans-serif;
  */
  @import "social-icons";
+
 $white: #f2f2f2;
 $black: #0d0d0d;
 $yellow: #f2cc0f;
@@ -120,71 +121,277 @@ div.paragraph {
 }
 
 .clock {
-  margin-top: 50px;
-  margin-inline: auto;
-  position: relative;
-  display: block;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  width: 250px;
-  height: 100%;
-  text-align: center;
-  transition: 0.6s;
-}
-
-.is-countdown {
-  text-transform: uppercase;
-  text-align: center;
-  padding: 3px 10px 25px;
-  background: $purple;
-  border-radius: 20px;
-  margin-bottom: 30%;
-  transition: background 2s;
-}
-
-.countdown-row {
-  display: inline-block;
-  clear: both;
-  width: 100%;
-  padding: 0;
-  text-align: center;
-}
-.countdown-section {
-  position: relative;
-  float: left;
-  display: inline;
-  width: 50px;
-  height: 2.1em;
-  margin: 0 1.5% 0 1.5%;
-  font-size: 1em;
-  text-align: center;
-  color: $black;
-  background: $white;
-  border-radius: 3px;
-}
-.countdown-amount {
-  display: block;
-  font-size: 1.4em;
-  line-height: 1.4em;
-  font-family: "Oswald", sans-serif;
-  font-weight: bold;
-}
-.countdown-section .countdown-period {
-  margin-top: 7px;
-  display: block;
-  font-size: 1rem;
-  font-weight: bold;
-  color: $white;
-  text-shadow: 1px 1px 5px black;
-}
-.clock h3 {
-  font-weight: bold;
-  color: $white;
-  text-shadow: 1px 1px 5px black;
-}
+    margin-top: 50px;
+    margin-inline: auto;
+    position: relative;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: 250px;
+    height: 100%;
+    text-align: center;
+    transition: 0.6s;
+  }
+  
+  .is-countdown {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 3px 10px 25px;
+    background: $purple;
+    border-radius: 20px;
+    margin-bottom: 30%;
+    transition: background 2s;
+  }
+  
+  .countdown-row {
+    display: inline-block;
+    clear: both;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .countdown-section {
+    position: relative;
+    float: left;
+    display: inline;
+    width: 50px;
+    height: 2.1em;
+    margin: 0 1.5% 0 1.5%;
+    font-size: 1em;
+    text-align: center;
+    color: $black;
+    background: $white;
+    border-radius: 3px;
+  }
+  .countdown-amount {
+    display: block;
+    font-size: 1.4em;
+    line-height: 1.4em;
+    font-family: "Oswald", sans-serif;
+    font-weight: bold;
+  }
+  .countdown-section .countdown-period {
+    margin-top: 7px;
+    display: block;
+    font-size: 1rem;
+    font-weight: bold;
+    color: $white;
+    text-shadow: 1px 1px 5px black;
+  }
+  .clock h3 {
+    font-weight: bold;
+    color: $white;
+    text-shadow: 1px 1px 5px black;
+  }
 
 .navbar {
   padding-block: 0;
   margin-bottom: 8px;
 }
+
+// .gallery img{
+//     display: inline-block;
+//     position: relative;
+//     width: 400px;
+//     height: 400px;
+//     border-radius: 50%;
+// }
+
+
+  .gallery {
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+    .buttons {
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    a {
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+  }
+  .gallery {
+     a {
+      text-decoration: none !important;
+      color: $basic-light-color;
+      width: 450px;
+      height: 450px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      margin-right: 20px;
+      font-size: 25px;
+      overflow: hidden;
+      position: relative;
+      
+      i {
+        position: relative;
+        z-index: 3;
+      }
+img{
+    height: 600px;
+    object-fit: fill;
+}
+      }
+    }
+  
+  .gallery.aeneas {
+    
+    a {
+      transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
+      
+      i {
+        transition: transform 0.4s linear 0s;
+      }
+      
+      &:hover {
+        transform: rotate(360deg);
+        border-radius: 30% 50% 30% 50%;
+        opacity: 0.8;
+        
+        i {
+          transform: rotate(-360deg);
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+  .row > .column {
+    padding: 0 8px;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Create four equal columns that floats next to eachother */
+  .column {
+    float: left;
+    width: 25%;
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 5;
+    padding-top: 100px;
+    left: 0;
+    top: 130px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: black;
+    opacity: 0.9;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #999;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  /* Hide the slides by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Caption text */
+  .caption-container {
+    text-align: center;
+    background-color: black;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  img.demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  
+  img.hover-shadow {
+    transition: 0.3s;
+  }
+  
+  .hover-shadow:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
