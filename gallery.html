@@ -173,9 +173,38 @@
       <div class="container justify-content-center text-center" dir="rtl">
         <div class="gallery aeneas">
           <div class="buttons">
-            <a href="#" class="pic" title="תמונות">
+            <a href="#" class="pic" title="תמונות" onclick="openModal();currentSlide(1)">
               <i class="" aria-hidden="true">
-                <img src="./public/images/5a96434c99e3b_BBBB.jpg" alt="" />
+                <div
+                  id="carouselExampleSlidesOnly"
+                  class="carousel slide carousel-fade"
+                  data-bs-ride="carousel"
+                  data-bs-interval="2000"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="https://th.bing.com/th/id/OIP.LPd9Wnzbk_g6OG0Uer3YTwHaEK?w=297&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        class="d-block"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="https://th.bing.com/th/id/OIP.kP_ZFGOJWJyNXFYrgtkEywHaE6?w=251&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        class="d-block"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="https://th.bing.com/th/id/OIP.vQXEDBsx5gAXMfaYE_1lQgHaE8?w=238&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                        class="d-block"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                </div>
               </i>
             </a>
           </div>
@@ -192,194 +221,168 @@
         </div>
         <div class="fs-1 text-primary">וידיאו</div>
       </div>
-      <div class="image-container container-fluid justify-content-center mx-3">
-        <div class="row justify-content-center">
-          <div class="col-xxl-3 col-xl-4 col-sm-6 mb-3 h-50">
-            <div class="card text-bg-dark">
-              <img
-                src="https://th.bing.com/th/id/OIP.LPd9Wnzbk_g6OG0Uer3YTwHaEK?w=297&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
-                class=" hover-shadow"
-                alt="..."
-                onclick="openModal();currentSlide(1)"
-              />
-            </div>
-          </div>
-          <div class="col-xxl-3 col-xl-4 col-sm-6 mb-3 h-50">
-            <div class="card text-bg-dark">
-              <img
-                src="https://th.bing.com/th/id/OIP.kP_ZFGOJWJyNXFYrgtkEywHaE6?w=251&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
-                class="card-img hover-shadow"
-                alt="..."
-                onclick="openModal();currentSlide(2)"
-              />
-            </div>
-          </div>
-          <div class="col-xxl-3 col-xl-4 col-sm-6 mb-3">
-            <div class="card text-bg-dark">
-              <img
-                src="https://th.bing.com/th/id/OIP.vQXEDBsx5gAXMfaYE_1lQgHaE8?w=238&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
-                class="card-img hover-shadow"
-                alt="..."
-                onclick="openModal();currentSlide(3)"
-              />
-              
-            </div>
-          </div>
-          <div class="col-xxl-3 col-xl-4 col-sm-6 mb-3">
-            <div class="card text-bg-dark">
-              <img
-                src="https://th.bing.com/th/id/OIP.g2Z0Q_SfJGsNWNqSovOWXAHaE8?w=233&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
-                class="card-img"
-                alt="..."
-                onclick="openModal();currentSlide(4)"
-              />
-              
-            </div>
-          </div>
-          <div class="col-xxl-3 col-xl-4 col-sm-6 mb-3">
-            <div class="card text-bg-dark">
-              <img
-                src="https://th.bing.com/th/id/OIP.HjAX_W8jwk2fJKNI1cegaQHaEi?w=249&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7"
-                class="card-img"
-                alt="..."
-              />
-              
-            </div>
-          </div>
-          <div class="col-xxl-3 col-xl-4 col-sm-6 mb-3">
-            <div class="card text-bg-dark">
-              <img
-                src="https://th.bing.com/th/id/OIP.fYTY1GGug6xktiDXksQ5sQHaFj?w=234&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
-                class="card-img"
-                alt="..."
-              />
-              
-            </div>
-          </div>
-          <div class="col-xxl-3 col-xl-4 col-sm-6 mb-3">
-            <div class="card text-bg-dark">
-              <img
-                src="https://th.bing.com/th/id/OIP.jkjIkr6vhok_8UTG--KE3QHaE8?w=243&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
-                class="card-img"
-                alt="..."
-              />
-              
-            </div>
-          </div>
-          <div class="col-xxl-3 col-xl-4 col-sm-6 mb-3">
-            <div class="card text-bg-dark">
-              <img
-                src="https://th.bing.com/th/id/R.1de0e46970726c44d790603015b58400?rik=cwTq9%2fdWSiR%2blQ&pid=ImgRaw&r=0"
-                class="card-img"
-                alt="..."
-              />
-              
-            </div>
-          </div>
-          <div class="col-xxl-3 col-xl-4 col-sm-6 mb-3">
-            <div class="card text-bg-dark">
-              <img
-                src="https://th.bing.com/th/id/OIP.GfcobMuVQStrjcu5tQZ37AHaF7?w=229&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7"
-                class="card-img"
-                alt="..."
-              />
-              
-            </div>
-          </div>
-          <div class="col-xxl-3 col-xl-4 col-sm-6 mb-3">
-            <div class="card text-bg-dark">
-              <img
-                src="https://i.ytimg.com/vi/YlgCXMvqRmI/maxresdefault.jpg"
-                class="hover-shadow card-img"
-              />
-              
-            </div>
-          </div>
-        </div>
-      </div>
+      
 
       <div id="myModal" class="modal">
         <span class="close cursor" onclick="closeModal()">&times;</span>
         <div class="modal-content">
           <div class="slider">
+            <div class="mySlides">
+              <div class="numbertext">1 / 10</div>
+              <img
+                src="https://th.bing.com/th/id/OIP.LPd9Wnzbk_g6OG0Uer3YTwHaEK?w=297&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+              />
+            </div>
 
             <div class="mySlides">
-              <div class="numbertext">1 / 4</div>
+              <div class="numbertext">2 / 10</div>
               <img
-              src="https://th.bing.com/th/id/OIP.LPd9Wnzbk_g6OG0Uer3YTwHaEK?w=297&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                src="https://th.bing.com/th/id/OIP.kP_ZFGOJWJyNXFYrgtkEywHaE6?w=251&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
               />
             </div>
-            
+
             <div class="mySlides">
-              <div class="numbertext">2 / 4</div>
+              <div class="numbertext">3 / 10</div>
               <img
-              src="https://th.bing.com/th/id/OIP.kP_ZFGOJWJyNXFYrgtkEywHaE6?w=251&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                src="https://th.bing.com/th/id/OIP.vQXEDBsx5gAXMfaYE_1lQgHaE8?w=238&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
               />
             </div>
-            
+
             <div class="mySlides">
-              <div class="numbertext">3 / 4</div>
-            <img
-            src="https://th.bing.com/th/id/OIP.vQXEDBsx5gAXMfaYE_1lQgHaE8?w=238&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
-            />
+              <div class="numbertext">4 / 10</div>
+              <img
+                src="https://th.bing.com/th/id/OIP.g2Z0Q_SfJGsNWNqSovOWXAHaE8?w=233&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+              />
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">5 / 10</div>
+              <img
+              src="https://th.bing.com/th/id/OIP.HjAX_W8jwk2fJKNI1cegaQHaEi?w=249&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+              />
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">6 / 10</div>
+              <img
+              src="https://th.bing.com/th/id/OIP.fYTY1GGug6xktiDXksQ5sQHaFj?w=234&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+              />
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">7 / 10</div>
+              <img
+              src="https://th.bing.com/th/id/OIP.jkjIkr6vhok_8UTG--KE3QHaE8?w=243&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+              />
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">8 / 10</div>
+              <img
+              src="https://th.bing.com/th/id/R.1de0e46970726c44d790603015b58400?rik=cwTq9%2fdWSiR%2blQ&pid=ImgRaw&r=0"
+              />
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">9 / 10</div>
+              <img
+              src="https://th.bing.com/th/id/OIP.GfcobMuVQStrjcu5tQZ37AHaF7?w=229&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+              />
+            </div>
+            <div class="mySlides">
+              <div class="numbertext">10 / 10</div>
+              <img
+              src="https://i.ytimg.com/vi/YlgCXMvqRmI/maxresdefault.jpg"
+              />
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
           </div>
-          
-          <div class="mySlides">
-            <div class="numbertext">4 / 4</div>
-            <img
-            src="https://th.bing.com/th/id/OIP.g2Z0Q_SfJGsNWNqSovOWXAHaE8?w=233&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
-            />
-          </div>
-          
-          <!-- Next/previous controls -->
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
-          
-          <!-- Caption text -->
+
           <div class="caption-container">
             <p id="caption"></p>
           </div>
-          
-          <!-- Thumbnail image controls -->
+
           <div class="slide_var row justify-content-center">
+            <div class="column col-xxl-3 col-xl-4 col-sm-6 mb-3">
+              <img
+                class="demo"
+                src="https://th.bing.com/th/id/OIP.LPd9Wnzbk_g6OG0Uer3YTwHaEK?w=297&h=180&c=7&r=0&o=5&dpr=1.3&pid=1."
+                onclick="currentSlide(1)"
+                alt="Nature"
+              />
+            </div>
 
             <div class="column col-xxl-3 col-xl-4 col-sm-6 mb-3">
               <img
-              class="demo"
-              src="https://th.bing.com/th/id/OIP.LPd9Wnzbk_g6OG0Uer3YTwHaEK?w=297&h=180&c=7&r=0&o=5&dpr=1.3&pid=1."
-              onclick="currentSlide(1)"
-              alt="Nature"
+                class="demo"
+                src="https://th.bing.com/th/id/OIP.kP_ZFGOJWJyNXFYrgtkEywHaE6?w=251&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                onclick="currentSlide(2)"
+                alt="Snow"
               />
             </div>
-            
+
             <div class="column col-xxl-3 col-xl-4 col-sm-6 mb-3">
-            <img
-            class="demo"
-            src="https://th.bing.com/th/id/OIP.kP_ZFGOJWJyNXFYrgtkEywHaE6?w=251&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
-            onclick="currentSlide(2)"
-            alt="Snow"
-            />
+              <img
+                class="demo"
+                src="https://th.bing.com/th/id/OIP.vQXEDBsx5gAXMfaYE_1lQgHaE8?w=238&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                onclick="currentSlide(3)"
+                alt="Mountains"
+              />
+            </div>
+
+            <div class="column col-xxl-3 col-xl-4 col-sm-6 mb-3">
+              <img
+                class="demo"
+                src="https://th.bing.com/th/id/OIP.g2Z0Q_SfJGsNWNqSovOWXAHaE8?w=233&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                onclick="currentSlide(4)"
+                alt="Lights"
+              />
+            </div>
+            <div class="column col-xxl-3 col-xl-4 col-sm-6 mb-3">
+              <img
+                class="demo"
+                src="https://th.bing.com/th/id/OIP.HjAX_W8jwk2fJKNI1cegaQHaEi?w=249&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                onclick="currentSlide(5)"
+                alt="Lights"
+              />
+            </div>
+            <div class="column col-xxl-3 col-xl-4 col-sm-6 mb-3">
+              <img
+                class="demo"
+                src="https://th.bing.com/th/id/OIP.fYTY1GGug6xktiDXksQ5sQHaFj?w=234&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                onclick="currentSlide(6)"
+                alt="Lights"
+              />
+            </div>
+            <div class="column col-xxl-3 col-xl-4 col-sm-6 mb-3">
+              <img
+                class="demo"
+                src="https://th.bing.com/th/id/OIP.jkjIkr6vhok_8UTG--KE3QHaE8?w=243&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                onclick="currentSlide(7)"
+                alt="Lights"
+              />
+            </div>
+            <div class="column col-xxl-3 col-xl-4 col-sm-6 mb-3">
+              <img
+                class="demo"
+                src="https://th.bing.com/th/id/R.1de0e46970726c44d790603015b58400?rik=cwTq9%2fdWSiR%2blQ&pid=ImgRaw&r=0"
+                onclick="currentSlide(8)"
+                alt="Lights"
+              />
+            </div>
+            <div class="column col-xxl-3 col-xl-4 col-sm-6 mb-3">
+              <img
+                class="demo"
+                src="https://th.bing.com/th/id/OIP.GfcobMuVQStrjcu5tQZ37AHaF7?w=229&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                onclick="currentSlide(9)"
+                alt="Lights"
+              />
+            </div>
+            <div class="column col-xxl-3 col-xl-4 col-sm-6 mb-3">
+              <img
+                class="demo"
+                src="https://i.ytimg.com/vi/YlgCXMvqRmI/maxresdefault.jpg"
+                onclick="currentSlide(10)"
+                alt="Lights"
+              />
+            </div>
           </div>
-          
-          <div class="column col-xxl-3 col-xl-4 col-sm-6 mb-3">
-            <img
-            class="demo"
-            src="https://th.bing.com/th/id/OIP.vQXEDBsx5gAXMfaYE_1lQgHaE8?w=238&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
-            onclick="currentSlide(3)"
-            alt="Mountains"
-            />
-          </div>
-          
-          <div class="column col-xxl-3 col-xl-4 col-sm-6 mb-3">
-            <img
-            class="demo"
-            src="https://th.bing.com/th/id/OIP.g2Z0Q_SfJGsNWNqSovOWXAHaE8?w=233&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
-            onclick="currentSlide(4)"
-            alt="Lights"
-            />
-          </div>
-        </div>
         </div>
       </div>
     </main>
