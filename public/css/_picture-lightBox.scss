@@ -21,7 +21,7 @@ margin-bottom: 15px;
 text-align: center;
 }
 
-.modal {
+.modalPic, .modalVideo {
 display: none;
 position: fixed;
 z-index: 5;
@@ -35,8 +35,9 @@ overflow: auto;
 background-color: $black;
 }
 
+
 /* Modal Content */
-.modal-content {
+.modal-content, .modal-contentVideo{
 position: relative;
 background-color: $black;
 margin: auto;
@@ -63,13 +64,20 @@ cursor: pointer;
 }
 
 /* Hide the slides by default */
-.mySlides {
+.mySlidesPic, .mySlidesVideo {
 display: none;
 & > img{
     width: 100%;
 }
+& > iframe{
+    width: 78vw;
+    max-width: 1200px;
+    height: 500px;
+    
 }
-.slider{
+}
+
+.sliderPic, .sliderVideo{
 position: relative;
 }
 
@@ -121,12 +129,11 @@ color: white;
 
 }
 
-img.demo {
+img.demopic, img.demoVideo {
 opacity: 0.6;
 }
 
-.active,
-.demo:hover {
+.active, .demopic:hover, .demoVideo:hover {
 opacity: 1;
 }
 

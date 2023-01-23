@@ -173,7 +173,12 @@
       <div class="container justify-content-center text-center" dir="rtl">
         <div class="gallery aeneas">
           <div class="buttons">
-            <a href="#" class="pic" title="תמונות" onclick="openModal();currentSlide(1)">
+            <a
+              href="#"
+              class="pic"
+              title="תמונות"
+              onclick="openModal('Picture')"
+            >
               <i class="" aria-hidden="true">
                 <div
                   id="carouselExampleSlidesOnly"
@@ -212,7 +217,7 @@
         <div class="fs-1 text-primary">תמונות</div>
         <div class="gallery aeneas">
           <div class="buttons">
-            <a href="#" class="pic" title="וידיאו">
+            <a href="#" class="pic" title="וידיאו" onclick="openModal('Video')">
               <i class="" aria-hidden="true">
                 <img src="./public/images/OIP.jpeg" alt="" />
               </i>
@@ -221,165 +226,277 @@
         </div>
         <div class="fs-1 text-primary">וידיאו</div>
       </div>
-      
 
-      <div id="myModal" class="modal">
-        <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div id="myModalPicture" class="modalPic">
+        <span class="close cursor" onclick="closeModal('Picture')"
+          >&times;</span
+        >
         <div class="modal-content">
-          <div class="slider">
-            <div class="mySlides">
+          <div class="sliderPic">
+            <div class="mySlidesPic">
               <div class="numbertext">1 / 10</div>
               <img
                 src="https://th.bing.com/th/id/OIP.LPd9Wnzbk_g6OG0Uer3YTwHaEK?w=297&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
               />
             </div>
 
-            <div class="mySlides">
+            <div class="mySlidesPic">
               <div class="numbertext">2 / 10</div>
               <img
                 src="https://th.bing.com/th/id/OIP.kP_ZFGOJWJyNXFYrgtkEywHaE6?w=251&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
               />
             </div>
 
-            <div class="mySlides">
+            <div class="mySlidesPic">
               <div class="numbertext">3 / 10</div>
               <img
                 src="https://th.bing.com/th/id/OIP.vQXEDBsx5gAXMfaYE_1lQgHaE8?w=238&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
               />
             </div>
 
-            <div class="mySlides">
+            <div class="mySlidesPic">
               <div class="numbertext">4 / 10</div>
               <img
                 src="https://th.bing.com/th/id/OIP.g2Z0Q_SfJGsNWNqSovOWXAHaE8?w=233&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
               />
             </div>
-            <div class="mySlides">
+            <div class="mySlidesPic">
               <div class="numbertext">5 / 10</div>
               <img
-              src="https://th.bing.com/th/id/OIP.HjAX_W8jwk2fJKNI1cegaQHaEi?w=249&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                src="https://th.bing.com/th/id/OIP.HjAX_W8jwk2fJKNI1cegaQHaEi?w=249&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7"
               />
             </div>
-            <div class="mySlides">
+            <div class="mySlidesPic">
               <div class="numbertext">6 / 10</div>
               <img
-              src="https://th.bing.com/th/id/OIP.fYTY1GGug6xktiDXksQ5sQHaFj?w=234&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                src="https://th.bing.com/th/id/OIP.fYTY1GGug6xktiDXksQ5sQHaFj?w=234&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
               />
             </div>
-            <div class="mySlides">
+            <div class="mySlidesPic">
               <div class="numbertext">7 / 10</div>
               <img
-              src="https://th.bing.com/th/id/OIP.jkjIkr6vhok_8UTG--KE3QHaE8?w=243&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                src="https://th.bing.com/th/id/OIP.jkjIkr6vhok_8UTG--KE3QHaE8?w=243&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
               />
             </div>
-            <div class="mySlides">
+            <div class="mySlidesPic">
               <div class="numbertext">8 / 10</div>
               <img
-              src="https://th.bing.com/th/id/R.1de0e46970726c44d790603015b58400?rik=cwTq9%2fdWSiR%2blQ&pid=ImgRaw&r=0"
+                src="https://th.bing.com/th/id/R.1de0e46970726c44d790603015b58400?rik=cwTq9%2fdWSiR%2blQ&pid=ImgRaw&r=0"
               />
             </div>
-            <div class="mySlides">
+            <div class="mySlidesPic">
               <div class="numbertext">9 / 10</div>
               <img
-              src="https://th.bing.com/th/id/OIP.GfcobMuVQStrjcu5tQZ37AHaF7?w=229&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                src="https://th.bing.com/th/id/OIP.GfcobMuVQStrjcu5tQZ37AHaF7?w=229&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7"
               />
             </div>
-            <div class="mySlides">
+            <div class="mySlidesPic">
               <div class="numbertext">10 / 10</div>
-              <img
-              src="https://i.ytimg.com/vi/YlgCXMvqRmI/maxresdefault.jpg"
-              />
+              <img src="https://i.ytimg.com/vi/YlgCXMvqRmI/maxresdefault.jpg" />
             </div>
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
           </div>
 
           <div class="caption-container">
-            <p id="caption"></p>
+            <p id="captionPicture"></p>
           </div>
 
           <div class="slide_var row justify-content-center">
             <div class="column col-xxl-3 col-xl-4 col-sm-6 mb-3">
               <img
-                class="demo"
+                class="demopic"
                 src="https://th.bing.com/th/id/OIP.LPd9Wnzbk_g6OG0Uer3YTwHaEK?w=297&h=180&c=7&r=0&o=5&dpr=1.3&pid=1."
                 onclick="currentSlide(1)"
-                alt="Nature"
+                alt="פורים 2022"
               />
             </div>
 
             <div class="column col-xxl-3 col-xl-4 col-sm-6 mb-3">
               <img
-                class="demo"
+                class="demopic"
                 src="https://th.bing.com/th/id/OIP.kP_ZFGOJWJyNXFYrgtkEywHaE6?w=251&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
                 onclick="currentSlide(2)"
-                alt="Snow"
+                alt="פורים 2022"
               />
             </div>
 
             <div class="column col-xxl-3 col-xl-4 col-sm-6 mb-3">
               <img
-                class="demo"
+                class="demopic"
                 src="https://th.bing.com/th/id/OIP.vQXEDBsx5gAXMfaYE_1lQgHaE8?w=238&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
                 onclick="currentSlide(3)"
-                alt="Mountains"
+                alt="פורים 2022"
               />
             </div>
 
             <div class="column col-xxl-3 col-xl-4 col-sm-6 mb-3">
               <img
-                class="demo"
+                class="demopic"
                 src="https://th.bing.com/th/id/OIP.g2Z0Q_SfJGsNWNqSovOWXAHaE8?w=233&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
                 onclick="currentSlide(4)"
-                alt="Lights"
+                alt="פורים 2022"
               />
             </div>
             <div class="column col-xxl-3 col-xl-4 col-sm-6 mb-3">
               <img
-                class="demo"
+                class="demopic"
                 src="https://th.bing.com/th/id/OIP.HjAX_W8jwk2fJKNI1cegaQHaEi?w=249&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7"
                 onclick="currentSlide(5)"
-                alt="Lights"
+                alt="פורים 2022"
               />
             </div>
             <div class="column col-xxl-3 col-xl-4 col-sm-6 mb-3">
               <img
-                class="demo"
+                class="demopic"
                 src="https://th.bing.com/th/id/OIP.fYTY1GGug6xktiDXksQ5sQHaFj?w=234&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
                 onclick="currentSlide(6)"
-                alt="Lights"
+                alt="פורים 2022"
               />
             </div>
             <div class="column col-xxl-3 col-xl-4 col-sm-6 mb-3">
               <img
-                class="demo"
+                class="demopic"
                 src="https://th.bing.com/th/id/OIP.jkjIkr6vhok_8UTG--KE3QHaE8?w=243&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7"
                 onclick="currentSlide(7)"
-                alt="Lights"
+                alt="פורים 2022"
               />
             </div>
             <div class="column col-xxl-3 col-xl-4 col-sm-6 mb-3">
               <img
-                class="demo"
+                class="demopic"
                 src="https://th.bing.com/th/id/R.1de0e46970726c44d790603015b58400?rik=cwTq9%2fdWSiR%2blQ&pid=ImgRaw&r=0"
                 onclick="currentSlide(8)"
-                alt="Lights"
+                alt="פורים 2022"
               />
             </div>
             <div class="column col-xxl-3 col-xl-4 col-sm-6 mb-3">
               <img
-                class="demo"
+                class="demopic"
                 src="https://th.bing.com/th/id/OIP.GfcobMuVQStrjcu5tQZ37AHaF7?w=229&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7"
                 onclick="currentSlide(9)"
-                alt="Lights"
+                alt="פורים 2022"
               />
             </div>
             <div class="column col-xxl-3 col-xl-4 col-sm-6 mb-3">
               <img
-                class="demo"
+                class="demopic"
                 src="https://i.ytimg.com/vi/YlgCXMvqRmI/maxresdefault.jpg"
                 onclick="currentSlide(10)"
-                alt="Lights"
+                alt="פורים 2022"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="myModalVideo" class="modalVideo">
+        <span class="close cursor" onclick="closeModal('Video')">&times;</span>
+        <div class="modal-contentVideo">
+          <div class="sliderVideo">
+            <div class="mySlidesVideo">
+              <div class="numbertext">1 / 5</div>
+              <iframe
+                src="https://www.youtube.com/embed/oMnQJHeYLlU?mute=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="mySlidesVideo">
+              <div class="numbertext">2 / 5</div>
+              <iframe
+                src="https://www.youtube.com/embed/P28yyOX_teQ?mute=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="mySlidesVideo">
+              <div class="numbertext">3 / 5</div>
+              <iframe
+                src="https://www.youtube.com/embed/_9jG8s80VL8?mute=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+
+            <div class="mySlidesVideo">
+              <div class="numbertext">4 / 5</div>
+              <iframe
+                src="https://www.youtube.com/embed/04-vfObOkX8?mute=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="mySlidesVideo">
+              <div class="numbertext">5 / 5</div>
+              <iframe
+                src="https://www.youtube.com/embed/EvqrTEsvfkY?mute=1"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <a class="prev" onclick="currentVideo(-1)">&#10094;</a>
+            <a class="next" onclick="currentVideo(1)">&#10095;</a>
+          </div>
+
+          <div class="caption-container">
+            <p id="captionVideo"></p>
+          </div>
+
+          <div class="slide_var row justify-content-center">
+            <div class="column col-xxl-3 col-xl-4 col-sm-6 mb-3">
+              <img
+                class="demoVideo"
+                src="https://th.bing.com/th?&id=OVP.JMFWNJnOyrcGVWzu0OnmIgHgFo&w=293&h=164&c=7&pid=2.1&rs=1"
+                onclick="currentVideo(1)"
+                alt="פורים 2022"
+              />
+            </div>
+
+            <div class="column col-xxl-3 col-xl-4 col-sm-6 mb-3">
+              <img
+                class="demoVideo"
+                src="https://th.bing.com/th?&id=OVP.sy2UtT79fMHDXD2YPd7IIgEsDh&w=293&h=164&c=7&pid=2.1&rs=1"
+                onclick="currentVideo(2)"
+                alt="פורים 2022"
+              />
+            </div>
+
+            <div class="column col-xxl-3 col-xl-4 col-sm-6 mb-3">
+              <img
+                class="demoVideo"
+                src="https://th.bing.com/th?&id=OVP.tMcBCW5bvGtyQPW9-YueHAEsCo&w=293&h=164&c=7&pid=2.1&rs=1"
+                onclick="currentVideo(3)"
+                alt="פורים 2022"
+              />
+            </div>
+
+            <div class="column col-xxl-3 col-xl-4 col-sm-6 mb-3">
+              <img
+                class="demoVideo"
+                src="./public/images/video4.jpeg"
+                onclick="currentVideo(4)"
+                alt="פורים 2022"
+              />
+            </div>
+            <div class="column col-xxl-3 col-xl-4 col-sm-6 mb-3">
+              <img
+                class="demoVideo"
+                src="https://th.bing.com/th/id/OIP.HjAX_W8jwk2fJKNI1cegaQHaEi?w=249&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7"
+                onclick="currentVideo(5)"
+                alt="פורים 2019"
               />
             </div>
           </div>

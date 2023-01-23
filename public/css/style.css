@@ -17,7 +17,7 @@ font-family: 'Roboto', sans-serif;
   text-align: center;
 }
 
-.modal {
+.modalPic, .modalVideo {
   display: none;
   position: fixed;
   z-index: 5;
@@ -32,7 +32,7 @@ font-family: 'Roboto', sans-serif;
 }
 
 /* Modal Content */
-.modal-content {
+.modal-content, .modal-contentVideo {
   position: relative;
   background-color: #0d0d0d;
   margin: auto;
@@ -59,14 +59,19 @@ font-family: 'Roboto', sans-serif;
 }
 
 /* Hide the slides by default */
-.mySlides {
+.mySlidesPic, .mySlidesVideo {
   display: none;
 }
-.mySlides > img {
+.mySlidesPic > img, .mySlidesVideo > img {
   width: 100%;
 }
+.mySlidesPic > iframe, .mySlidesVideo > iframe {
+  width: 78vw;
+  max-width: 1200px;
+  height: 500px;
+}
 
-.slider {
+.sliderPic, .sliderVideo {
   position: relative;
 }
 
@@ -119,12 +124,11 @@ font-family: 'Roboto', sans-serif;
   color: white;
 }
 
-img.demo {
+img.demopic, img.demoVideo {
   opacity: 0.6;
 }
 
-.active,
-.demo:hover {
+.active, .demopic:hover, .demoVideo:hover {
   opacity: 1;
 }
 
