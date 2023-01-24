@@ -8,7 +8,7 @@ $primary: $green;
 $success: $white;
 $info: $yellow;
 
-.holon-mayor, .history {
+.holon-mayor, .history, .adloyada {
     background-color: $yellow;
     overflow: hidden;
     margin-bottom: 50px;
@@ -79,7 +79,33 @@ $info: $yellow;
     }
 }
     
-    
+    .adloyada {
+        & .styleTriangle > img {
+            float: left;
+            width: 100%;
+            transform: translateX(-32%);
+            shape-outside: polygon(70% 0, 40% 100%, 50% 50%);
+            shape-margin: 2rem;
+            -webkit-clip-path: polygon(30% 0, 100% 0, 70% 100%, 30% 100%); 
+            clip-path: polygon(30% 0, 100% 0, 70% 100%, 30% 100%);
+          }
+          
+      & .floatLogo {
+          padding-top: 20px;
+          width: 100vh;
+          display: table-cell;
+          vertical-align: middle;
+          text-align: center;
+          
+          & img {
+              width: 100%;
+              border-radius: 50%;
+              margin: auto;
+              display: block;
+          }
+      }
+        
+    }
 
 
 

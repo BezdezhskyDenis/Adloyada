@@ -354,15 +354,15 @@ img.hover-shadow {
   transform: rotate(-360deg);
 }
 
-.holon-mayor, .history {
+.holon-mayor, .history, .adloyada {
   background-color: #f2cc0f;
   overflow: hidden;
   margin-bottom: 50px;
 }
-.holon-mayor .paragraph, .history .paragraph {
+.holon-mayor .paragraph, .history .paragraph, .adloyada .paragraph {
   color: #0d0d0d;
 }
-.holon-mayor .title, .history .title {
+.holon-mayor .title, .history .title, .adloyada .title {
   color: #9453a6;
 }
 
@@ -407,6 +407,29 @@ img.hover-shadow {
   text-align: center;
 }
 .history .floatLogo img {
+  width: 100%;
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+}
+
+.adloyada .styleTriangle > img {
+  float: left;
+  width: 100%;
+  transform: translateX(-32%);
+  shape-outside: polygon(70% 0, 40% 100%, 50% 50%);
+  shape-margin: 2rem;
+  -webkit-clip-path: polygon(30% 0, 100% 0, 70% 100%, 30% 100%);
+  clip-path: polygon(30% 0, 100% 0, 70% 100%, 30% 100%);
+}
+.adloyada .floatLogo {
+  padding-top: 20px;
+  width: 100vh;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.adloyada .floatLogo img {
   width: 100%;
   border-radius: 50%;
   margin: auto;
