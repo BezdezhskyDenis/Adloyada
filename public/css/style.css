@@ -276,6 +276,193 @@ img.hover-shadow {
   text-shadow: 1px 1px 5px black;
 }
 
+.my-gallery {
+  display: flex;
+  height: 35rem;
+  gap: 1rem;
+}
+
+.my-gallery > div {
+  flex: 1;
+  border-radius: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  transition: all 0.8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+}
+
+.my-gallery > div:hover {
+  flex: 5;
+}
+
+.my-gallery .secondary-card {
+  text-align: center;
+  color: #f2f2f2;
+  position: relative;
+  top: 29rem;
+}
+
+.gallery {
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+}
+.gallery .buttons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+.gallery a:last-child {
+  margin-right: 0px;
+}
+
+.gallery a {
+  text-decoration: none !important;
+  color: #fff;
+  width: 450px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  margin-right: 20px;
+  font-size: 25px;
+  overflow: hidden;
+  position: relative;
+}
+.gallery a i {
+  position: relative;
+  z-index: 3;
+}
+.gallery a img {
+  height: 600px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+
+.gallery.aeneas a {
+  transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
+}
+.gallery.aeneas a i {
+  transition: transform 0.4s linear 0s;
+}
+.gallery.aeneas a:hover {
+  transform: rotate(360deg);
+  border-radius: 30% 50% 30% 50%;
+  opacity: 0.8;
+}
+.gallery.aeneas a:hover i {
+  transform: rotate(-360deg);
+}
+
+.holon-mayor, .history {
+  background-color: #f2cc0f;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.holon-mayor .paragraph, .history .paragraph {
+  color: #0d0d0d;
+}
+.holon-mayor .title, .history .title {
+  color: #9453a6;
+}
+
+.holon-mayor .styleTriangle > img {
+  float: left;
+  width: 100%;
+  transform: translateX(-32%);
+  shape-outside: polygon(70% 0, 40% 100%, 50% 50%);
+  shape-margin: 2rem;
+  -webkit-clip-path: polygon(30% 0, 100% 0, 70% 100%, 30% 100%);
+  clip-path: polygon(30% 0, 100% 0, 70% 100%, 30% 100%);
+}
+.holon-mayor .floatLogo {
+  padding-top: 20px;
+  width: 100vh;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.holon-mayor .floatLogo img {
+  width: 75%;
+  max-width: 300px;
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+}
+
+.history .styleTriangle > img {
+  float: right;
+  width: 100%;
+  transform: translateX(18%);
+  shape-outside: polygon(30% 0, 100% 0%, 100% 100%, 60% 100%);
+  shape-margin: 2rem;
+  -webkit-clip-path: polygon(10% 0, 100% 0%, 100% 100%, 40% 100%);
+  clip-path: polygon(10% 0, 100% 0%, 100% 100%, 40% 100%);
+}
+.history .floatLogo {
+  padding-top: 20px;
+  width: 100vh;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.history .floatLogo img {
+  width: 100%;
+  border-radius: 50%;
+  margin: auto;
+  display: block;
+}
+
+.slide-in-right {
+  -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.slide-in-left {
+  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-right {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 h1,
 h2,
 h3,
@@ -349,30 +536,9 @@ div.paragraph {
   height: 200px;
 }
 
-.my-galeri {
-  display: flex;
-  height: 35rem;
-  gap: 1rem;
-}
-
-.my-galeri > div {
-  flex: 1;
-  border-radius: 1rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  transition: all 0.8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
-}
-
-.my-galeri > div:hover {
-  flex: 5;
-}
-
-.my-galeri .secondary-card {
-  text-align: center;
-  color: #f2f2f2;
-  position: relative;
-  top: 29rem;
+.navbar {
+  padding-block: 0;
+  margin-bottom: 8px;
 }
 
 .form-floating > input::-moz-selection, .form-floating > textarea::-moz-selection {
@@ -382,61 +548,4 @@ div.paragraph {
 .form-floating > input::selection,
 .form-floating > textarea::selection {
   background-color: #8cbf3f;
-}
-
-.navbar {
-  padding-block: 0;
-  margin-bottom: 8px;
-}
-
-.gallery {
-  width: 100%;
-  padding: 20px 0px 20px 0px;
-}
-.gallery .buttons {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-}
-.gallery a:last-child {
-  margin-right: 0px;
-}
-
-.gallery a {
-  text-decoration: none !important;
-  color: #fff;
-  width: 450px;
-  height: 450px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-  margin-right: 20px;
-  font-size: 25px;
-  overflow: hidden;
-  position: relative;
-}
-.gallery a i {
-  position: relative;
-  z-index: 3;
-}
-.gallery a img {
-  height: 600px;
-  -o-object-fit: fill;
-     object-fit: fill;
-}
-
-.gallery.aeneas a {
-  transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s, border-top-right-radius 0.1s linear 0.1s, border-bottom-right-radius 0.1s linear 0.2s, border-bottom-left-radius 0.1s linear 0.3s;
-}
-.gallery.aeneas a i {
-  transition: transform 0.4s linear 0s;
-}
-.gallery.aeneas a:hover {
-  transform: rotate(360deg);
-  border-radius: 30% 50% 30% 50%;
-  opacity: 0.8;
-}
-.gallery.aeneas a:hover i {
-  transform: rotate(-360deg);
 }/*# sourceMappingURL=style.css.map */

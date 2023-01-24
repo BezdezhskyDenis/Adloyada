@@ -16,3 +16,57 @@
 .my-galeri > div:hover {
     flex: 5;
 }
+
+.colTest{
+    display: inline-flex;
+}
+
+img.colTest{
+    width: 300px;
+    margin-bottom: 2px;
+}
+
+img::selection {
+    background-color: red;
+}
+
+.circle {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    transform: rotate(25deg);
+  }
+  .circle> h1{
+    transform: rotate(-25deg);
+  }
+  .circle:after, .circle:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 50%;
+  }
+  .circle:after {
+    background: #02FBFD;
+    left: -2px;
+  }
+  .circle:before {
+    background: #FE0103;
+    right: -2px;
+  }
+
+  #container {
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    background-image: url(http://www.webdesign.org/img_articles/14881/site-background-pattern-07.jpg);
+  }
+  
+  #triangle-topleft {
+    width: 0;
+    height: 0;
+    border-top: 300px solid gray;
+    border-right: 300px solid transparent;
+  }

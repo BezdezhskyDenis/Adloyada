@@ -1,0 +1,89 @@
+.my-gallery {
+  display: flex;
+  height: 35rem;
+  gap: 1rem;
+}
+
+.my-gallery > div {
+  flex: 1;
+  border-radius: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  transition: all 0.8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+}
+
+.my-gallery > div:hover {
+  flex: 5;
+}
+.my-gallery .secondary-card {
+  text-align: center;
+  color: $white;
+  position: relative;
+  top: 29rem;
+}
+
+
+
+.gallery {
+  width: 100%;
+  padding: 20px 0px 20px 0px;
+  .buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  a {
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+.gallery {
+  a {
+    text-decoration: none !important;
+    color: $basic-light-color;
+    width: 450px;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-right: 20px;
+    font-size: 25px;
+    overflow: hidden;
+    position: relative;
+
+    i {
+      position: relative;
+      z-index: 3;
+    }
+    img {
+      height: 600px;
+      object-fit: fill;
+    }
+  }
+}
+
+.gallery.aeneas {
+  a {
+    transition: transform 0.4s linear 0s, border-top-left-radius 0.1s linear 0s,
+      border-top-right-radius 0.1s linear 0.1s,
+      border-bottom-right-radius 0.1s linear 0.2s,
+      border-bottom-left-radius 0.1s linear 0.3s;
+
+    i {
+      transition: transform 0.4s linear 0s;
+    }
+
+    &:hover {
+      transform: rotate(360deg);
+      border-radius: 30% 50% 30% 50%;
+      opacity: 0.8;
+
+      i {
+        transform: rotate(-360deg);
+      }
+    }
+  }
+}
