@@ -394,7 +394,7 @@ img.hover-shadow {
   float: right;
   width: 100%;
   transform: translateX(18%);
-  shape-outside: polygon(30% 0, 100% 0%, 100% 100%, 60% 100%);
+  shape-outside: polygon(28% 0, 100% 0%, 100% 100%, 58% 100%);
   shape-margin: 2rem;
   -webkit-clip-path: polygon(10% 0, 100% 0%, 100% 100%, 40% 100%);
   clip-path: polygon(10% 0, 100% 0%, 100% 100%, 40% 100%);
