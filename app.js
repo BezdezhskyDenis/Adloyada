@@ -11,7 +11,7 @@ $("li").on("mouseout", function () {
 });
 
 $("a").on("touchend touchstart tap click", function () {
-  var userChose = $(this).attr("name");
+  let userChose = $(this).attr("name");
   switch (userChose) {
     case "adloyada":
       $(this).attr("href", "./");
@@ -69,7 +69,7 @@ $("a").on("touchend touchstart tap click", function () {
       $(this).attr("href", "./");
       break;
       case "faqs":
-      $(this).attr("href", "./");
+      $(this).attr("href", "./faqs.html");
       break;
     default:
       break;
@@ -171,3 +171,20 @@ setInterval( ()=> {
   $('#clockSeconds').text(seconds);
 }, 1000);
 
+
+
+const items = document.querySelectorAll(".accordion button");
+
+function toggleAccordion() {
+  const itemToggle = this.getAttribute('aria-expanded');
+  
+  for (i = 0; i < items.length; i++) {
+    items[i].setAttribute('aria-expanded', 'false');
+  }
+  
+  if (itemToggle == 'false') {
+    this.setAttribute('aria-expanded', 'true');
+  }
+}
+
+items.forEach(item => item.addEventListener('click', toggleAccordion));

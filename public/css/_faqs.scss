@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+
+$lightgray: #e5e5e5;
+$blue: #03b5d2;
+
+$white: #f2f2f2;
+$black: #0d0d0d;
+$yellow: #f2cc0f;
+$green: #8cbf3f;
+$purple: #9453a6;
+$secondary: $purple;
+$primary: $green;
+$success: $white;
+$info: $yellow;
+
+
+.accordion {
+
+  .accordion-item {
+    border-bottom: 1px solid $lightgray;
+    button[aria-expanded='true'] {
+      border-bottom: 1px solid $secondary;
+    }
+  }
+   button {
+    position: relative;
+    display: block;
+    text-align: right;
+    width: 100%;
+    padding: 1em 0;
+    color: $black;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+    &:hover, &:focus {
+      cursor: pointer;
+      color: $secondary;
+      background-color: $green;
+      &::after {
+        cursor: pointer;
+        background-color: $white;
+        color: $secondary;
+        border: 1px solid $secondary;
+      }
+    }
+    .accordion-title {
+      padding: 1em 1.5em 1em 0;
+    }
+    .icon {
+      display: inline-block;
+      position: absolute;
+      top: 18px;
+      left: 0;
+      width: 22px;
+      height: 22px;
+      border: 1px solid;
+      border-radius: 22px;
+      margin-left: 10px;
+      &::before {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 9px;
+        left: 5px;
+        width: 10px;
+        height: 2px;
+        background: currentColor;
+      }
+      &::after {
+        display: block;
+        position: absolute;
+        content: '';
+        top: 5px;
+        left: 9px;
+        width: 2px;
+        height: 10px;
+        background: currentColor;
+      }
+    }
+  }
+  button[aria-expanded='true'] {
+    color: $secondary;
+    .icon {
+      &::after {
+        width: 0;
+      }
+    }
+    + .accordion-content {
+      opacity: 1;
+      max-height: 30rem;
+      min-height: fit-content;
+      transition: opacity 300ms linear, max-height 300ms linear, min-height 300ms linear;
+      will-change: opacity, max-height, min-height;
+      img{
+          width: 100%;
+        }
+    }
+  }
+  .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    min-height:0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear, min-height 200ms linear;
+    will-change: opacity, max-height, min-height;
+    .paragraph {
+      font-weight: lighter;
+      margin: 2em;
+      color: $black;
+      word-spacing: 0.2rem;
+    }
+  }
+}

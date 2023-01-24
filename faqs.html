@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./public/bootstrap/bootstrap-5.3.0-alpha1/scss/bootstrap.css"
+    />
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      charset="utf-8"
+    ></script>
+    <title>שאלות ותשובות</title>
+  </head>
+  <body>
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid bg-primary p-3" id="navExpend">
+          <a
+            class="navbar-brand pt-3"
+            href="https://www.holon.muni.il/Pages/default.aspx"
+            id="logoExpend"
+            target="_blank"
+            ><img src="./public/images/Holon_logo.png" alt="Holon Logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarScroll" dir="rtl">
+            <ul
+              class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll fs-4 me-5"
+            >
+              <li class="nav-item mx-2 border-bottom">
+                <a
+                  class="nav-link active text-success fs-3"
+                  aria-current="page"
+                  name="adloyada"
+                  href="#"
+                  >העדלאידע</a
+                >
+              </li>
+              <li class="nav-item dropdown mx-2 border-bottom">
+                <a
+                  class="nav-link active text-success fs-3"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  ממנים
+                </a>
+                <ul class="dropdown-menu ms-auto">
+                  <li>
+                    <a class="dropdown-item fs-5" name="sponsors" href="#"
+                      >איזור לממנים</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" name="meyEden" href="#"
+                      >מי עדן</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" name="beer" href="#"
+                      >בירת גולדסטאר</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" name="borger" href="#"
+                      >בורגראנץ</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" name="pizza" href="#"
+                      >פיצה תרשיש</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" name="azriely" href="#"
+                      >עזריאלי</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" name="spaHolon" href="#"
+                      >ספאט חולון</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" name="osem" href="#">אסם</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown mx-2 border-bottom">
+                <a
+                  class="nav-link active text-success fs-3"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  מידע שימושי
+                </a>
+                <ul class="dropdown-menu ms-auto">
+                  <li>
+                    <a class="dropdown-item fs-5" name="information" href="#"
+                      >מידע כללי</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" name="hotels" href="#"
+                      >מלונות</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" name="bars" href="#">ברים</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" name="parking" href="#"
+                      >חניונים</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" name="roads" href="#"
+                      >דרכי הגעה</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item fs-5" name="faqs" href="#"
+                      >שאלות ותשובות</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item mx-2 border-bottom">
+                <a
+                  class="nav-link active text-success fs-3"
+                  name="gallery"
+                  href="#"
+                  >גלריה</a
+                >
+              </li>
+              <li class="nav-item mx-2 border-bottom">
+                <a
+                  class="nav-link active text-success fs-3"
+                  name="contactUs"
+                  href="#"
+                  >צור קשר</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="container" dir="rtl">
+        <div class="fs-1">שאלות נפוצות</div>
+        <div class="accordion">
+          <div class="accordion-item">
+            <button id="accordion-button-1" aria-expanded="false">
+              <span class="accordion-title fs-4">איפה תיהיה התהלוכה?</span
+              ><span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <div class="paragraph fs-5">
+                התהלוכה תתחיל במשדרות משה שרת 25 ותחלוף לאורך רחוב אלופי צה"ל
+                ושדרות גולדה מאיר. התהלוכה מסתיימת ברחוב פנחס אילון 8
+                <img src="./public/images/adloyada_map.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-2" aria-expanded="false">
+              <span class="accordion-title fs-4">איפה למצוא חניה?</span
+              ><span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <div class="paragraph fs-5">
+                ניתן לחנות ברחובות הסמוכים למסלול התהלוכה. כמו כן ישנם חניונים ברחבי העיר 
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d16093.53948215648!2d34.793240002572546!3d32.0083433625451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z15fXoNeZ15XXoNeZ150g15fXldec15XXnw!5e0!3m2!1siw!2sil!4v1674598066381!5m2!1siw!2sil"
+                  width="600"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-3" aria-expanded="false">
+              <span class="accordion-title fs-4">איזה מלונות ישנם בעיר?</span
+              ><span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <div class="paragraph fs-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                viverra suspendisse potenti.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-4" aria-expanded="false">
+              <span class="accordion-title fs-4">מה עושים אחרי הפסטיבל?</span
+              ><span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <div class="paragraph fs-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                viverra suspendisse potenti.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <button id="accordion-button-5" aria-expanded="false">
+              <span class="accordion-title fs-4">איפה אפשר לבלות בלילה?</span
+              ><span class="icon" aria-hidden="true"></span>
+            </button>
+            <div class="accordion-content">
+              <div class="paragraph fs-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Elementum sagittis vitae et leo duis ut. Ut tortor pretium
+                viverra suspendisse potenti.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="container">
+      <footer class="py-3 my-4">
+        <div class="effect aeneas">
+          <div class="buttons">
+            <a
+              href="https://www.facebook.com/holon.muni/"
+              target="_blank"
+              class="fb"
+              title="Join us on Facebook"
+              ><i class="fa fa-facebook" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://t.me/holonmuni"
+              target="_blank"
+              class="telegram"
+              title="Join us on Telegram"
+              ><i class="fa fa-telegram" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/user/HolonMunicipality"
+              target="_blank"
+              class="youtube"
+              title="Join us on Youtube"
+              ><i class="fa fa-youtube" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/holon.muni/?igshid=zb0iddlodcfs"
+              target="_blank"
+              class="insta"
+              title="Join us on Instagram"
+              ><i class="fa fa-instagram" aria-hidden="true"></i
+            ></a>
+            <a
+              href="https://www.tripadvisor.com/Tourism-g1010800-Holon_Tel_Aviv_District-Vacations.html"
+              target="_blank"
+              class="tr"
+              title="Join us on Tripadvisor"
+              ><i class="fa fa-tripadvisor" aria-hidden="true"></i
+            ></a>
+          </div>
+        </div>
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+          <li class="nav-item">
+            <a name="faqs" href="#" class="nav-link px-2 text-muted">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" name="information" class="nav-link px-2 text-muted"
+              >מידע שימושי</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" name="sponsors" class="nav-link px-2 text-muted"
+              >ממנים</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#" name="adloyada" class="nav-link px-2 text-muted"
+              >עמוד ראשי</a
+            >
+          </li>
+        </ul>
+        <p class="text-center text-muted">© Created by 2023 Denis Bezdezhsky</p>
+        <h1 id="ww"></h1>
+      </footer>
+    </div>
+  </body>
+  <script src="./app.js"></script>
+</html>
