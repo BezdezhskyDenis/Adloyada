@@ -57,13 +57,16 @@ $("a").on("touchend touchstart tap click", function () {
       $(this).attr("href", "https://www.osem-nestle.co.il/");
       break;
     case "hotels":
-      $(this).attr("href", "./");
+      $(this).attr("target", "_blank");
+      $(this).attr("href", "https://www.booking.com/searchresults.en-us.html?ss=%D7%97%D7%95%D7%9C%D7%95%D7%9F%2C+%D7%99%D7%A9%D7%A8%D7%90%D7%9C&ssne=Tel+Aviv&ssne_untouched=Tel+Aviv&label=%D7%97%D7%92%D7%99%D7%92%D7%95%D7%AA-%D7%A2%D7%93%D7%9C%D7%90%D7%99%D7%93%D7%A2-%D7%95%D7%90%D7%99%D7%A8%D7%95%D7%A2%D7%99-%D7%A4%D7%95%D7%A8%D7%99%D7%9D-%D7%9C%D7%99%D7%9C%D7%93%D7%99%D7%9D-%D7%91_16032_Map_Festi_recom&aid=1676911&lang=en-us&sb=1&src_elem=sb&src=searchresults&dest_id=-780164&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=he&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=45f22eeff97a00b4&ac_meta=GhA0NWYyMmVlZmY5N2EwMGI0IAAoATICaGU6CteX15XXnNeV159AAEoAUAA%3D&checkin=2023-03-06&checkout=2023-03-07&group_adults=1&no_rooms=1&group_children=0&sb_travel_purpose=leisure");
       break;
     case "bars":
-      $(this).attr("href", "./");
+      $(this).attr("target", "_blank");
+      $(this).attr("href", "https://www.rest.co.il/restaurants/holon/pubs-and-bars/");
       break;
     case "parking":
-      $(this).attr("href", "./");
+      $(this).attr("target", "_blank");
+      $(this).attr("href", "https://www.google.com/maps/search/%D7%97%D7%A0%D7%99%D7%95%D7%A0%D7%99%D7%9D+%D7%97%D7%95%D7%9C%D7%95%D7%9F%E2%80%AD/@32.0178837,34.779918,16z/data=!4m2!2m1!6e2?hl=iw");
       break;
     case "roads":
       $(this).attr("href", "./");

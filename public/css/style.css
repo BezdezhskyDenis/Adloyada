@@ -355,15 +355,25 @@ img.hover-shadow {
   transform: rotate(-360deg);
 }
 
-.holon-mayor, .history, .adloyada {
+.holon-mayor,
+.history,
+.adloyada,
+.adloyada_road {
   background-color: #f2cc0f;
   overflow: hidden;
   margin-bottom: 50px;
+  border-radius: 50px;
 }
-.holon-mayor .paragraph, .history .paragraph, .adloyada .paragraph {
+.holon-mayor .paragraph,
+.history .paragraph,
+.adloyada .paragraph,
+.adloyada_road .paragraph {
   color: #0d0d0d;
 }
-.holon-mayor .title, .history .title, .adloyada .title {
+.holon-mayor .title,
+.history .title,
+.adloyada .title,
+.adloyada_road .title {
   color: #9453a6;
 }
 
@@ -374,6 +384,7 @@ img.hover-shadow {
   shape-outside: polygon(70% 0, 40% 100%, 50% 50%);
   shape-margin: 2rem;
   -webkit-clip-path: polygon(30% 0, 100% 0, 70% 100%, 30% 100%);
+  -ms-clip-path: polygon(30% 0, 100% 0, 70% 100%, 30% 100%);
   clip-path: polygon(30% 0, 100% 0, 70% 100%, 30% 100%);
 }
 .holon-mayor .floatLogo {
@@ -398,7 +409,18 @@ img.hover-shadow {
   shape-outside: polygon(28% 0, 100% 0%, 100% 100%, 58% 100%);
   shape-margin: 2rem;
   -webkit-clip-path: polygon(10% 0, 100% 0%, 100% 100%, 40% 100%);
+  -ms-clip-path: polygon(10% 0, 100% 0%, 100% 100%, 40% 100%);
   clip-path: polygon(10% 0, 100% 0%, 100% 100%, 40% 100%);
+  transition: width 1s, transform 1s, shape-outside 0.5s, -webkit-clip-path 0.5s;
+  transition: clip-path 0.5s, width 1s, transform 1s, shape-outside 0.5s;
+  transition: clip-path 0.5s, width 1s, transform 1s, shape-outside 0.5s, -webkit-clip-path 0.5s;
+}
+.history .styleTriangle > img:hover {
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+  width: 100%;
+  transform: translateX(0);
+  shape-outside: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
 }
 .history .floatLogo {
   padding-top: 20px;
@@ -421,7 +443,18 @@ img.hover-shadow {
   shape-outside: polygon(70% 0, 40% 100%, 50% 50%);
   shape-margin: 2rem;
   -webkit-clip-path: polygon(30% 0, 100% 0, 70% 100%, 30% 100%);
+  -ms-clip-path: polygon(30% 0, 100% 0, 70% 100%, 30% 100%);
   clip-path: polygon(30% 0, 100% 0, 70% 100%, 30% 100%);
+  transition: width 2s, transform 2s, shape-outside 1s, -webkit-clip-path 1s;
+  transition: clip-path 1s, width 2s, transform 2s, shape-outside 1s;
+  transition: clip-path 1s, width 2s, transform 2s, shape-outside 1s, -webkit-clip-path 1s;
+}
+.adloyada .styleTriangle > img:hover {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  width: 100%;
+  transform: translateX(0);
+  shape-outside: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
 .adloyada .floatLogo {
   padding-top: 20px;
@@ -437,54 +470,59 @@ img.hover-shadow {
   display: block;
 }
 
-.slide-in-right {
-  -webkit-animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-in-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+.adloyada_road .styleTriangle > img {
+  float: right;
+  width: 90%;
+  transform: translateX(18%);
+  shape-outside: polygon(28% 0, 100% 0%, 100% 100%, 58% 100%);
+  shape-margin: 2rem;
+  -webkit-clip-path: polygon(10% 0, 100% 0%, 100% 100%, 40% 100%);
+  -ms-clip-path: polygon(10% 0, 100% 0%, 100% 100%, 40% 100%);
+  clip-path: polygon(10% 0, 100% 0%, 100% 100%, 40% 100%);
+  transition: width 1s, transform 1s, shape-outside 0.5s, -webkit-clip-path 0.5s;
+  transition: clip-path 0.5s, width 1s, transform 1s, shape-outside 0.5s;
+  transition: clip-path 0.5s, width 1s, transform 1s, shape-outside 0.5s, -webkit-clip-path 0.5s;
+}
+.adloyada_road .styleTriangle > img:hover {
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+  width: 100%;
+  transform: translateX(0);
+  shape-outside: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+}
+.adloyada_road .floatLogo {
+  padding-top: 20px;
+  width: 100vh;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.adloyada_road .floatLogo img {
+  width: 100%;
+  border-radius: 25%;
+  margin: auto;
+  display: block;
 }
 
-.slide-in-left {
-  -webkit-animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-in-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+@-webkit-keyframes polygonExpend {
+  from {
+    -webkit-clip-path: polygon(10% 0, 100% 0%, 100% 100%, 10% 100%);
+            clip-path: polygon(10% 0, 100% 0%, 100% 100%, 10% 100%);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+  }
 }
 
-@-webkit-keyframes slide-in-left {
-  0% {
-    transform: translateX(-1000px);
-    opacity: 0;
+@keyframes polygonExpend {
+  from {
+    -webkit-clip-path: polygon(10% 0, 100% 0%, 100% 100%, 10% 100%);
+            clip-path: polygon(10% 0, 100% 0%, 100% 100%, 10% 100%);
   }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes slide-in-left {
-  0% {
-    transform: translateX(-1000px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@-webkit-keyframes slide-in-right {
-  0% {
-    transform: translateX(1000px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes slide-in-right {
-  0% {
-    transform: translateX(1000px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
   }
 }
 .accordion .accordion-item {
@@ -559,7 +597,7 @@ img.hover-shadow {
 }
 .accordion button[aria-expanded=true] + .accordion-content {
   opacity: 1;
-  max-height: 30rem;
+  max-height: 35rem;
   min-height: -webkit-fit-content;
   min-height: -moz-fit-content;
   min-height: fit-content;
@@ -582,6 +620,13 @@ img.hover-shadow {
   margin: 2em;
   color: #0d0d0d;
   word-spacing: 0.2rem;
+}
+.accordion .accordion-content .paragraph a {
+  cursor: pointer;
+  font-weight: bold;
+}
+.accordion .accordion-content .paragraph a:hover {
+  color: #9453a6;
 }
 
 h1,
@@ -651,6 +696,12 @@ div.paragraph {
 .paragraph a:hover {
   color: #9453a6;
   font-weight: bold;
+}
+
+.bg-paragraph {
+  background-color: #f2cc0f;
+  border-radius: 50px;
+  padding-right: 13px;
 }
 
 .sponsors div {

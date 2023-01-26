@@ -92,6 +92,11 @@ div.paragraph {
   font-weight: bold;
 }
 
+.bg-paragraph{
+    background-color: $info;
+    border-radius: 50px;
+    padding-right: 13px;
+}
 .sponsors div {
   height: 200px;
 }

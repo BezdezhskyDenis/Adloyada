@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Hind:300,400&display=swap");
 
 $lightgray: #e5e5e5;
 $blue: #03b5d2;
@@ -13,16 +13,14 @@ $primary: $green;
 $success: $white;
 $info: $yellow;
 
-
 .accordion {
-
   .accordion-item {
     border-bottom: 1px solid $lightgray;
-    button[aria-expanded='true'] {
+    button[aria-expanded="true"] {
       border-bottom: 1px solid $secondary;
     }
   }
-   button {
+  button {
     position: relative;
     display: block;
     text-align: right;
@@ -34,7 +32,8 @@ $info: $yellow;
     border: none;
     background: none;
     outline: none;
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       cursor: pointer;
       color: $secondary;
       background-color: $green;
@@ -61,7 +60,7 @@ $info: $yellow;
       &::before {
         display: block;
         position: absolute;
-        content: '';
+        content: "";
         top: 9px;
         left: 5px;
         width: 10px;
@@ -71,7 +70,7 @@ $info: $yellow;
       &::after {
         display: block;
         position: absolute;
-        content: '';
+        content: "";
         top: 5px;
         left: 9px;
         width: 2px;
@@ -80,7 +79,7 @@ $info: $yellow;
       }
     }
   }
-  button[aria-expanded='true'] {
+  button[aria-expanded="true"] {
     color: $secondary;
     .icon {
       &::after {
@@ -89,27 +88,36 @@ $info: $yellow;
     }
     + .accordion-content {
       opacity: 1;
-      max-height: 30rem;
+      max-height: 35rem;
       min-height: fit-content;
-      transition: opacity 300ms linear, max-height 300ms linear, min-height 300ms linear;
+      transition: opacity 300ms linear, max-height 300ms linear,
+        min-height 300ms linear;
       will-change: opacity, max-height, min-height;
-      img{
-          width: 100%;
-        }
+      img {
+        width: 100%;
+      }
     }
   }
   .accordion-content {
     opacity: 0;
     max-height: 0;
-    min-height:0;
+    min-height: 0;
     overflow: hidden;
-    transition: opacity 200ms linear, max-height 200ms linear, min-height 200ms linear;
+    transition: opacity 200ms linear, max-height 200ms linear,
+      min-height 200ms linear;
     will-change: opacity, max-height, min-height;
     .paragraph {
       font-weight: lighter;
       margin: 2em;
       color: $black;
       word-spacing: 0.2rem;
+      a {
+        cursor: pointer;
+        font-weight: bold;
+        &:hover {
+          color: $secondary;
+        }
+      }
     }
   }
 }

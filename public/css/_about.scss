@@ -8,176 +8,170 @@ $primary: $green;
 $success: $white;
 $info: $yellow;
 
-.holon-mayor, .history, .adloyada {
-    background-color: $yellow;
-    overflow: hidden;
-    margin-bottom: 50px;
-    
-    & .paragraph{
-        color: $black;
-    }
-    & .title{
-        color: $secondary
-    }
+.holon-mayor,
+.history,
+.adloyada,
+.adloyada_road {
+  background-color: $yellow;
+  overflow: hidden;
+  margin-bottom: 50px;
+  border-radius: 50px;
+
+  & .paragraph {
+    color: $black;
   }
-  
-  .holon-mayor {
-
-     & .styleTriangle > img {
-          float: left;
-          width: 100%;
-          transform: translateX(-32%);
-          shape-outside: polygon(70% 0, 40% 100%, 50% 50%);
-          shape-margin: 2rem;
-          -webkit-clip-path: polygon(30% 0, 100% 0, 70% 100%, 30% 100%); 
-          clip-path: polygon(30% 0, 100% 0, 70% 100%, 30% 100%);
-        }
-        
-    & .floatLogo {
-        padding-top: 20px;
-        width: 100vh;
-        display: table-cell;
-        vertical-align: middle;
-        text-align: center;
-        
-        & img {
-            width: 75%;
-            max-width: 300px;
-            border-radius: 50%;
-            margin: auto;
-            display: block;
-        }
-    }
-}
-  
-    .history {
-
-        & .styleTriangle > img {
-            float: right;
-            width: 100%;
-            transform: translateX(18%);
-            shape-outside: polygon(28% 0, 100% 0%, 100% 100%, 58% 100%);
-            shape-margin: 2rem;
-            -webkit-clip-path: polygon(10% 0, 100% 0%, 100% 100%, 40% 100%); 
-            clip-path: polygon(10% 0, 100% 0%, 100% 100%, 40% 100%);
-        }
-        
-        & .floatLogo {
-            padding-top: 20px;
-            width: 100vh;
-            display: table-cell;
-        vertical-align: middle;
-        text-align: center;
-        
-        & img {
-            width: 100%;
-            // max-width: 300px;
-            border-radius: 50%;
-            margin: auto;
-            display: block;
-        }
-    }
-}
-    
-    .adloyada {
-        & .styleTriangle > img {
-            float: left;
-            width: 100%;
-            transform: translateX(-32%);
-            shape-outside: polygon(70% 0, 40% 100%, 50% 50%);
-            shape-margin: 2rem;
-            -webkit-clip-path: polygon(30% 0, 100% 0, 70% 100%, 30% 100%); 
-            clip-path: polygon(30% 0, 100% 0, 70% 100%, 30% 100%);
-          }
-          
-      & .floatLogo {
-          padding-top: 20px;
-          width: 100vh;
-          display: table-cell;
-          vertical-align: middle;
-          text-align: center;
-          
-          & img {
-              width: 100%;
-              border-radius: 50%;
-              margin: auto;
-              display: block;
-          }
-      }
-        
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.slide-in-right {
-	-webkit-animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: slide-in-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  & .title {
+    color: $secondary;
+  }
 }
 
-    .slide-in-left {
-      -webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-              animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.holon-mayor {
+  & .styleTriangle > img {
+    float: left;
+    width: 100%;
+    transform: translateX(-32%);
+    shape-outside: polygon(70% 0, 40% 100%, 50% 50%);
+    shape-margin: 2rem;
+    -webkit-clip-path: polygon(30% 0, 100% 0, 70% 100%, 30% 100%);
+    -ms-clip-path: polygon(30% 0, 100% 0, 70% 100%, 30% 100%);
+    clip-path: polygon(30% 0, 100% 0, 70% 100%, 30% 100%);
   }
-  
-   @-webkit-keyframes slide-in-left {
-      0% {
-        -webkit-transform: translateX(-1000px);
-                transform: translateX(-1000px);
-        opacity: 0;
-      }
-      100% {
-        -webkit-transform: translateX(0);
-                transform: translateX(0);
-        opacity: 1;
-      }
+
+  & .floatLogo {
+    padding-top: 20px;
+    width: 100vh;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+
+    & img {
+      width: 75%;
+      max-width: 300px;
+      border-radius: 50%;
+      margin: auto;
+      display: block;
     }
-    @keyframes slide-in-left {
-      0% {
-        -webkit-transform: translateX(-1000px);
-                transform: translateX(-1000px);
-        opacity: 0;
-      }
-      100% {
-        -webkit-transform: translateX(0);
-                transform: translateX(0);
-        opacity: 1;
-      }
-    }
+  }
+}
+
+.history {
+  & .styleTriangle > img {
+    float: right;
+    width: 100%;
+    transform: translateX(18%);
+    shape-outside: polygon(28% 0, 100% 0%, 100% 100%, 58% 100%);
+    shape-margin: 2rem;
+    -webkit-clip-path: polygon(10% 0, 100% 0%, 100% 100%, 40% 100%);
+    -ms-clip-path: polygon(10% 0, 100% 0%, 100% 100%, 40% 100%);
+    clip-path: polygon(10% 0, 100% 0%, 100% 100%, 40% 100%);
+    transition: clip-path 0.5s, width 1s, transform 1s, shape-outside 0.5s;
     
-@-webkit-keyframes slide-in-right {
-    0% {
-      -webkit-transform: translateX(1000px);
-              transform: translateX(1000px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-      opacity: 1;
+    &:hover{
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+      width: 100%;
+      transform: translateX(0);
+      shape-outside: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
     }
   }
-  @keyframes slide-in-right {
-    0% {
-      -webkit-transform: translateX(1000px);
-              transform: translateX(1000px);
-      opacity: 0;
+
+  & .floatLogo {
+    padding-top: 20px;
+    width: 100vh;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+
+    & img {
+      width: 100%;
+      // max-width: 300px;
+      border-radius: 50%;
+      margin: auto;
+      display: block;
     }
-    100% {
-      -webkit-transform: translateX(0);
-              transform: translateX(0);
-      opacity: 1;
+  }
+}
+
+.adloyada {
+  & .styleTriangle > img {
+    float: left;
+    width: 100%;
+    transform: translateX(-32%);
+    shape-outside: polygon(70% 0, 40% 100%, 50% 50%);
+    shape-margin: 2rem;
+    -webkit-clip-path: polygon(30% 0, 100% 0, 70% 100%, 30% 100%);
+    -ms-clip-path: polygon(30% 0, 100% 0, 70% 100%, 30% 100%);
+    clip-path: polygon(30% 0, 100% 0, 70% 100%, 30% 100%);
+    transition: clip-path 1s, width 2s, transform 2s, shape-outside 1s;
+    
+    &:hover{
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      width: 100%;
+      transform: translateX(0);
+      shape-outside: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
+  }
+
+  & .floatLogo {
+    padding-top: 20px;
+    width: 100vh;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+
+    & img {
+      width: 100%;
+      border-radius: 50%;
+      margin: auto;
+      display: block;
+    }
+  }
+}
+
+.adloyada_road {
+  & .styleTriangle > img {
+    float: right;
+    width: 90%;
+    transform: translateX(18%);
+    shape-outside: polygon(28% 0, 100% 0%, 100% 100%, 58% 100%);
+    shape-margin: 2rem;
+    -webkit-clip-path: polygon(10% 0, 100% 0%, 100% 100%, 40% 100%);
+    -ms-clip-path: polygon(10% 0, 100% 0%, 100% 100%, 40% 100%);
+    clip-path: polygon(10% 0, 100% 0%, 100% 100%, 40% 100%);
+    transition: clip-path 0.5s, width 1s, transform 1s, shape-outside 0.5s;
+    
+    &:hover{
+      clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+      width: 100%;
+      transform: translateX(0);
+      shape-outside: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    }
+  }
+
+  & .floatLogo {
+    padding-top: 20px;
+    width: 100vh;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+
+    & img {
+      width: 100%;
+      border-radius: 25%;
+      margin: auto;
+      display: block;
+    }
+  }
+}
+
+
+@keyframes polygonExpend{
+  from {
+    clip-path: polygon(10% 0, 100% 0%, 100% 100%, 10% 100%);
+    
   }
   
+  to {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    
+  }
+}
