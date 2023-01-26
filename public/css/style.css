@@ -834,4 +834,10 @@ div.paragraph {
 }
 .contactUsCard .text {
   color: #9453a6;
+}
+
+@media (1300px <= width) {
+  main {
+    margin-top: 70px;
+  }
 }/*# sourceMappingURL=style.css.map */

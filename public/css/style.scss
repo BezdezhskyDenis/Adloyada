@@ -248,3 +248,9 @@ div.paragraph {
         color: $secondary;
     }
   }
+
+  @media (1300px <= width) {
+    main{
+            margin-top: 70px;
+    }
+  }
