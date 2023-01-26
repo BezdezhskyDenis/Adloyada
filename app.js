@@ -17,7 +17,7 @@ $("a").on("touchend touchstart tap click", function () {
       $(this).attr("href", "./");
       break;
     case "sponsors":
-      $(this).attr("href", "./");
+      $(this).attr("href", "./sponsors.html");
       break;
     case "information":
       $(this).attr("href", "./about.html");

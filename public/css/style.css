@@ -629,6 +629,16 @@ img.hover-shadow {
   color: #9453a6;
 }
 
+.sponsorsLogo {
+  margin-inline: auto;
+}
+.sponsorsLogo img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 h1,
 h2,
 h3,
@@ -720,4 +730,108 @@ div.paragraph {
 .form-floating > input::selection,
 .form-floating > textarea::selection {
   background-color: #8cbf3f;
+}
+
+.bouncyTitle {
+  margin: 100px 0;
+  padding-bottom: 20px;
+  background-color: #f2cc0f;
+  border-radius: 50%;
+  -webkit-animation: roll-in-blurred-bottom 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
+  animation: roll-in-blurred-bottom 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+.bouncyTitle > .title {
+  padding: 50px 0;
+  -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.23, 1, 0.32, 1) 1s both;
+  animation: slide-in-blurred-top 0.6s cubic-bezier(0.23, 1, 0.32, 1) 1s both;
+}
+.bouncyTitle > .paragraph {
+  padding: 50px 0;
+  -webkit-animation: focus-in-contract-bck 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s both;
+  animation: focus-in-contract-bck 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) 2s both;
+}
+
+@-webkit-keyframes slide-in-blurred-top {
+  0% {
+    transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    transform-origin: 50% 0%;
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scaleY(1) scaleX(1);
+    transform-origin: 50% 50%;
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-blurred-top {
+  0% {
+    transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    transform-origin: 50% 0%;
+    filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) scaleY(1) scaleX(1);
+    transform-origin: 50% 50%;
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes roll-in-blurred-bottom {
+  0% {
+    transform: translateY(800px) rotate(720deg);
+    filter: blur(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@keyframes roll-in-blurred-bottom {
+  0% {
+    transform: translateY(800px) rotate(720deg);
+    filter: blur(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    transform: translateZ(300px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(12px);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    transform: translateZ(300px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(12px);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+.contactUsCard {
+  background-color: #f2cc0f;
+  border-radius: 15px;
+  padding: 20px 0;
+}
+.contactUsCard .text {
+  color: #9453a6;
 }/*# sourceMappingURL=style.css.map */

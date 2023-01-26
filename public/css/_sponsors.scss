@@ -1,0 +1,21 @@
+$white: #f2f2f2;
+$black: #0d0d0d;
+$yellow: #f2cc0f;
+$green: #8cbf3f;
+$purple: #9453a6;
+$secondary: $purple;
+$primary: $green;
+$success: $white;
+$info: $yellow;
+
+.sponsorsLogo{
+    margin-inline: auto;
+
+    img{
+        width: 100%;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+        
+        
+    }
+}
