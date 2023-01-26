@@ -154,7 +154,7 @@ if (viewportWidth < 1000) {
   });
 
 // Set the date we're counting down to
-const countDownDate = new Date("Mar 6, 2023 09:30:00").getTime();
+const countDownDate = new Date("Mar 6, 2023 12:00:00").getTime();
 
 setInterval( ()=> {
   const now = new Date().getTime();
