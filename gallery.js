@@ -11,7 +11,7 @@ function openModal(type) {
   var slideIndex = 1;
   showSlides(slideIndex);
   
-  function plusSlides(n) {
+  function plusPicSlides(n) {
     showSlides(slideIndex += n);
   }
   
@@ -45,7 +45,7 @@ function openModal(type) {
   showVideo(slideIndex);
   
   // Next/previous controls
-  function plusSlides(n) {
+  function plusVideoSlides(n) {
     showVideo(slideIndex += n);
   }
   
