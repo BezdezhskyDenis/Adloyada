@@ -68,9 +68,6 @@ $("a").on("touchend touchstart tap click", function () {
       $(this).attr("target", "_blank");
       $(this).attr("href", "https://www.google.com/maps/search/%D7%97%D7%A0%D7%99%D7%95%D7%A0%D7%99%D7%9D+%D7%97%D7%95%D7%9C%D7%95%D7%9F%E2%80%AD/@32.0178837,34.779918,16z/data=!4m2!2m1!6e2?hl=iw");
       break;
-    case "roads":
-      $(this).attr("href", "./");
-      break;
       case "faqs":
       $(this).attr("href", "./faqs.html");
       break;
