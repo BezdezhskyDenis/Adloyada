@@ -1044,6 +1044,15 @@ img.hover-shadow {
     color: #8cbf3f;
   }
 }
+@media only screen and (max-width: 1000px) {
+  .progressBar {
+    width: 90%;
+    top: 70%;
+  }
+  .purimGame .scoreBar {
+    height: 200px;
+  }
+}
 h1,
 h2,
 h3,

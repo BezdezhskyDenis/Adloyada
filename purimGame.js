@@ -92,7 +92,7 @@ function checkAnswer(userSelection, questionNumber, selectedId) {
   }
   setTimeout(function () {
     next();
-  }, 1000);
+  }, 2000);
 }
 
 function result() {

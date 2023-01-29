@@ -374,3 +374,15 @@ $fillBG: #0087b3;
     color: $green;
   }
 }
+
+@media only screen and (max-width: 1000px) {
+    .progressBar{
+        width: 90%;
+        top: 70%;
+        
+    }
+    .purimGame {
+    .scoreBar {
+        height: 200px;
+}}
+}
