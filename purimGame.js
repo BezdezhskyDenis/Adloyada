@@ -5,11 +5,11 @@ let userAnswers = 0;
 let finish = true;
 const resultContainer = document.getElementById("body11");
 
-$("#next").on("touchend touchstart tap click", () => {
+$("#next").click( () => {
   next();
 });
 
-$("#prev").on("touchend touchstart tap click", () => {
+$("#prev").click( () => {
   prev();
 });
 

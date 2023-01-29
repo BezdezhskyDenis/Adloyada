@@ -58,18 +58,30 @@ $("a").on("touchend touchstart tap click", function () {
       break;
     case "hotels":
       $(this).attr("target", "_blank");
-      $(this).attr("href", "https://www.booking.com/searchresults.en-us.html?ss=%D7%97%D7%95%D7%9C%D7%95%D7%9F%2C+%D7%99%D7%A9%D7%A8%D7%90%D7%9C&ssne=Tel+Aviv&ssne_untouched=Tel+Aviv&label=%D7%97%D7%92%D7%99%D7%92%D7%95%D7%AA-%D7%A2%D7%93%D7%9C%D7%90%D7%99%D7%93%D7%A2-%D7%95%D7%90%D7%99%D7%A8%D7%95%D7%A2%D7%99-%D7%A4%D7%95%D7%A8%D7%99%D7%9D-%D7%9C%D7%99%D7%9C%D7%93%D7%99%D7%9D-%D7%91_16032_Map_Festi_recom&aid=1676911&lang=en-us&sb=1&src_elem=sb&src=searchresults&dest_id=-780164&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=he&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=45f22eeff97a00b4&ac_meta=GhA0NWYyMmVlZmY5N2EwMGI0IAAoATICaGU6CteX15XXnNeV159AAEoAUAA%3D&checkin=2023-03-06&checkout=2023-03-07&group_adults=1&no_rooms=1&group_children=0&sb_travel_purpose=leisure");
+      $(this).attr(
+        "href",
+        "https://www.booking.com/searchresults.en-us.html?ss=%D7%97%D7%95%D7%9C%D7%95%D7%9F%2C+%D7%99%D7%A9%D7%A8%D7%90%D7%9C&ssne=Tel+Aviv&ssne_untouched=Tel+Aviv&label=%D7%97%D7%92%D7%99%D7%92%D7%95%D7%AA-%D7%A2%D7%93%D7%9C%D7%90%D7%99%D7%93%D7%A2-%D7%95%D7%90%D7%99%D7%A8%D7%95%D7%A2%D7%99-%D7%A4%D7%95%D7%A8%D7%99%D7%9D-%D7%9C%D7%99%D7%9C%D7%93%D7%99%D7%9D-%D7%91_16032_Map_Festi_recom&aid=1676911&lang=en-us&sb=1&src_elem=sb&src=searchresults&dest_id=-780164&dest_type=city&ac_position=0&ac_click_type=b&ac_langcode=he&ac_suggestion_list_length=5&search_selected=true&search_pageview_id=45f22eeff97a00b4&ac_meta=GhA0NWYyMmVlZmY5N2EwMGI0IAAoATICaGU6CteX15XXnNeV159AAEoAUAA%3D&checkin=2023-03-06&checkout=2023-03-07&group_adults=1&no_rooms=1&group_children=0&sb_travel_purpose=leisure"
+      );
       break;
     case "bars":
       $(this).attr("target", "_blank");
-      $(this).attr("href", "https://www.rest.co.il/restaurants/holon/pubs-and-bars/");
+      $(this).attr(
+        "href",
+        "https://www.rest.co.il/restaurants/holon/pubs-and-bars/"
+      );
       break;
     case "parking":
       $(this).attr("target", "_blank");
-      $(this).attr("href", "https://www.google.com/maps/search/%D7%97%D7%A0%D7%99%D7%95%D7%A0%D7%99%D7%9D+%D7%97%D7%95%D7%9C%D7%95%D7%9F%E2%80%AD/@32.0178837,34.779918,16z/data=!4m2!2m1!6e2?hl=iw");
+      $(this).attr(
+        "href",
+        "https://www.google.com/maps/search/%D7%97%D7%A0%D7%99%D7%95%D7%A0%D7%99%D7%9D+%D7%97%D7%95%D7%9C%D7%95%D7%9F%E2%80%AD/@32.0178837,34.779918,16z/data=!4m2!2m1!6e2?hl=iw"
+      );
       break;
-      case "faqs":
+    case "faqs":
       $(this).attr("href", "./faqs.html");
+      break;
+    case "purimGame":
+      $(this).attr("href", "./purimGame.html");
       break;
     default:
       break;
@@ -78,7 +90,6 @@ $("a").on("touchend touchstart tap click", function () {
 
 $(document).ready(function () {
   const viewportWidth = $(window).width();
-  // const viewportHeight = $(window).height();
 
   if (viewportWidth < 1300) {
     $("#galleryContainer").addClass("w-100 ");
@@ -88,7 +99,6 @@ $(document).ready(function () {
     $("#navExpend").removeClass("p-3");
     $("#logoExpend").addClass("navbar-brand");
     $("#logoExpend").removeClass("logo");
-
   } else {
     $("#galleryContainer").addClass("w-75");
     $("#galleryContainer").removeClass("w-100");
@@ -102,7 +112,6 @@ $(document).ready(function () {
 
 $(window).resize(function () {
   const viewportWidth = $(window).width();
-  // const viewportHeight = $(window).height();
 
   if (viewportWidth < 1300) {
     $("#galleryContainer").addClass("w-100 ");
@@ -120,71 +129,64 @@ $(window).resize(function () {
     $("#navExpend").addClass("p-3");
     $("#logoExpend").removeClass("navbar-brand");
     $("#logoExpend").addClass("logo");
-
   }
-  // console.log(viewportHeight, viewportWidth);
-  // $('#ww').text(viewportWidth)
 });
 
 $(document).ready(function () {
   const viewportWidth = $(window).width();
-  // const viewportHeight = $(window).height();
 
-if (viewportWidth < 1000) {
-    $(".styleTriangle").attr('hidden','');
-    $(".floatLogo").removeAttr('hidden');
+  if (viewportWidth < 1000) {
+    $(".styleTriangle").attr("hidden", "");
+    $(".floatLogo").removeAttr("hidden");
   } else {
-    $(".floatLogo").attr('hidden', '');
-    $(".styleTriangle").removeAttr('hidden');
+    $(".floatLogo").attr("hidden", "");
+    $(".styleTriangle").removeAttr("hidden");
   }
 });
 
+$(window).resize(function () {
+  const viewportWidth = $(window).width();
 
-  $(window).resize(function () {
-    const viewportWidth = $(window).width();
-    // const viewportHeight = $(window).height();
-  
-    if (viewportWidth < 1000) {
-      $(".styleTriangle").attr('hidden','');
-      $(".floatLogo").removeAttr('hidden');
-    } else {
-      $(".floatLogo").attr('hidden','');
-      $(".styleTriangle").removeAttr('hidden');
-    }
-  });
+  if (viewportWidth < 1000) {
+    $(".styleTriangle").attr("hidden", "");
+    $(".floatLogo").removeAttr("hidden");
+  } else {
+    $(".floatLogo").attr("hidden", "");
+    $(".styleTriangle").removeAttr("hidden");
+  }
+});
 
-// Set the date we're counting down to
 const countDownDate = new Date("Mar 6, 2023 12:00:00").getTime();
 
-setInterval( ()=> {
+setInterval(() => {
   const now = new Date().getTime();
   const distance = countDownDate - now;
-    
+
   const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const hours = Math.floor(
+    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  );
   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  $('#clockDay').text(days);
-  $('#clockHours').text(hours);
-  $('#clockMinutes').text(minutes);
-  $('#clockSeconds').text(seconds);
+
+  $("#clockDay").text(days);
+  $("#clockHours").text(hours);
+  $("#clockMinutes").text(minutes);
+  $("#clockSeconds").text(seconds);
 }, 1000);
-
-
 
 const items = document.querySelectorAll(".accordion button");
 
 function toggleAccordion() {
-  const itemToggle = this.getAttribute('aria-expanded');
-  
+  const itemToggle = this.getAttribute("aria-expanded");
+
   for (i = 0; i < items.length; i++) {
-    items[i].setAttribute('aria-expanded', 'false');
+    items[i].setAttribute("aria-expanded", "false");
   }
-  
-  if (itemToggle == 'false') {
-    this.setAttribute('aria-expanded', 'true');
+
+  if (itemToggle == "false") {
+    this.setAttribute("aria-expanded", "true");
   }
 }
 
-items.forEach(item => item.addEventListener('click', toggleAccordion));
+items.forEach((item) => item.addEventListener("click", toggleAccordion));

@@ -376,15 +376,14 @@ $fillBG: #0087b3;
 }
 
 @media only screen and (max-width: 1000px) {
-    .progressBar{
-        width: 88%;
-        top: 70%;
-  left: 38%;
-
-        
-    }
-    .purimGame {
+  .progressBar {
+    width: 88%;
+    top: 70%;
+    left: 38%;
+  }
+  .purimGame {
     .scoreBar {
-        height: 200px;
-}}
+      height: 200px;
+    }
+  }
 }
