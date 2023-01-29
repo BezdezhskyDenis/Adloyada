@@ -50,7 +50,7 @@ function prev() {
   }
 }
 
-$("input").on("touchend touchstart tap click", function () {
+$("input").click(function () {
   const userSelection = $(this).attr("value");
   const questionNumber = $(this).attr("name");
   const selectedId = $(this).attr("id");
@@ -117,7 +117,7 @@ function restart() {
   location.reload();
 }
 
-$(".step").on("touchend touchstart tap click", function () {
+$(".step").click(function () {
   const idNumber = $(this).attr("id").slice(4);
   goToQuestion(idNumber);
 });
