@@ -736,10 +736,12 @@ img.hover-shadow {
   background: linear-gradient(to top, #eeeeee, #bbbbbb);
   vertical-align: middle;
 }
-.purimGame .main .triviaQuestions .questionBody label:hover {
-  -webkit-animation: background-switch-black 0.5s both;
-          animation: background-switch-black 0.5s both;
-  color: #f2f2f2 !important;
+@media only screen and (min-width: 1000px) {
+  .purimGame .main .triviaQuestions .questionBody label:hover {
+    -webkit-animation: background-switch-black 0.5s both;
+            animation: background-switch-black 0.5s both;
+    color: #f2f2f2 !important;
+  }
 }
 .purimGame .main .triviaQuestions .questionBody button {
   display: flex;
@@ -760,10 +762,12 @@ img.hover-shadow {
   background: linear-gradient(to top, #eeeeee, #bbbbbb);
   vertical-align: middle;
 }
-.purimGame .main .triviaQuestions .questionBody button:hover {
-  -webkit-animation: background-switch-black 0.5s both;
-          animation: background-switch-black 0.5s both;
-  color: #f2f2f2 !important;
+@media only screen and (min-width: 1000px) {
+  .purimGame .main .triviaQuestions .questionBody button:hover {
+    -webkit-animation: background-switch-black 0.5s both;
+            animation: background-switch-black 0.5s both;
+    color: #f2f2f2 !important;
+  }
 }
 .purimGame .main .triviaQuestions .checkedTrue {
   background: linear-gradient(to top, rgba(164, 226, 70, 0.6509803922), #8cbf3f);

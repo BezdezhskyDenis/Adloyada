@@ -104,10 +104,12 @@ $fillBG: #0087b3;
             background: linear-gradient(to top, #eeeeee, #bbbbbb);
             vertical-align: middle;
           }
+          @media only screen and (min-width: 1000px){
           &:hover {
             animation: background-switch-black 0.5s both;
             color: $white !important;
           }
+        }
         }
 
         button {
@@ -128,9 +130,11 @@ $fillBG: #0087b3;
             background: linear-gradient(to top, #eeeeee, #bbbbbb);
             vertical-align: middle;
           }
-          &:hover {
-            animation: background-switch-black 0.5s both;
-            color: $white !important;
+          @media only screen and (min-width: 1000px){
+            &:hover {
+              animation: background-switch-black 0.5s both;
+              color: $white !important;
+            }
           }
         }
       }
