@@ -1,0 +1,376 @@
+$white: #f2f2f2;
+$black: #0d0d0d;
+$yellow: #f2cc0f;
+$green: #8cbf3f;
+$purple: #9453a6;
+$secondary: $purple;
+$primary: $green;
+$success: $white;
+$info: $yellow;
+$empty: #aaa;
+$fillBG: #0087b3;
+
+.container {
+  margin-top: 100px;
+}
+.purimGame {
+  background-color: $info;
+  border-radius: 25px;
+  height: fit-content;
+  min-height: 800px;
+  width: 80%;
+  margin-inline: auto;
+
+  .hidden {
+    width: 0;
+    height: 0;
+    scale: 0;
+  }
+  .show {
+    scale: 1;
+    width: auto;
+    height: auto;
+    transition: scale 0.5s;
+  }
+  .scoreBar {
+    position: relative;
+    left: 2.5%;
+    height: 100px;
+    width: 105%;
+    border-radius: 25px;
+    box-shadow: 0 5px 5px 5px #931997;
+    border: 2px solid $secondary;
+    background: $secondary;
+    background: linear-gradient(to top, #d053a6, $secondary);
+
+    .nextQ,
+    .prevQ {
+      cursor: pointer;
+      position: absolute;
+      top: 0;
+      height: 100%;
+      padding: 30px 10px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+    .prevQ {
+      left: 0;
+      &:hover {
+        animation: slide-left 1s both infinite;
+      }
+    }
+    .nextQ:hover {
+      animation: slide-right 1s both infinite;
+    }
+  }
+
+  .main {
+    padding-top: 80px;
+
+    .triviaTitle {
+      width: 80%;
+      margin-inline: auto;
+      margin-bottom: 80px;
+      .questionTitle {
+        text-shadow: gray 3px 3px;
+        font-weight: 400;
+      }
+    }
+    .triviaQuestions {
+      text-align: center;
+
+      .questionBody {
+        label {
+          display: flex;
+          width: 90%;
+          height: 120px;
+          padding: 8px;
+          margin-bottom: 20px;
+          overflow: hidden;
+          justify-content: center;
+          align-items: center;
+          margin-inline: auto;
+          &.btn {
+            color: $black !important;
+            text-shadow: 1px 2px 20px white;
+            border: 2px solid $black;
+            border-radius: 10px;
+            background: linear-gradient(to top, #eeeeee, #bbbbbb);
+            vertical-align: middle;
+          }
+          &:hover {
+            animation: background-switch-black 0.5s both;
+            color: $white !important;
+          }
+        }
+
+        button {
+          display: flex;
+          width: 90%;
+          height: 120px;
+          padding: 8px;
+          margin-bottom: 20px;
+          overflow: hidden;
+          justify-content: center;
+          align-items: center;
+          margin-inline: auto;
+          &.btn {
+            color: $black !important;
+            text-shadow: 1px 2px 20px white;
+            border: 2px solid $black;
+            border-radius: 10px;
+            background: linear-gradient(to top, #eeeeee, #bbbbbb);
+            vertical-align: middle;
+          }
+          &:hover {
+            animation: background-switch-black 0.5s both;
+            color: $white !important;
+          }
+        }
+      }
+      .checkedTrue {
+        background: linear-gradient(to top, #a4e246a6, $green);
+        animation: checked-true 0.5s 2 both;
+      }
+      .checkedFalse {
+        background: linear-gradient(to top, #db1515a6, #db1515);
+        color: $white !important;
+        animation: checked-false 0.5s 2 both;
+      }
+      .answered {
+        position: absolute;
+        background-color: red;
+        content: "";
+        z-index: 5;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+      }
+    }
+  }
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-left {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  50% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes background-switch-black {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    background: linear-gradient(to top, #eeeeee, #bbbbbb);
+  }
+  20% {
+    background: linear-gradient(to top, #bbbbbb, #999999);
+  }
+  40% {
+    background: linear-gradient(to top, #999999, #666666);
+  }
+  60% {
+    background: linear-gradient(to top, #666666, #333333);
+  }
+  80% {
+    background: linear-gradient(to top, #333333, #0d0d0da6);
+  }
+  100% {
+    -webkit-transform: scale(0.95);
+    transform: scale(0.95);
+    background: linear-gradient(to top, #0d0d0da6, $black);
+  }
+}
+
+@keyframes checked-true {
+  0% {
+    background: linear-gradient(to top, #eeeeee, #bbbbbb);
+  }
+  100% {
+    background: linear-gradient(to top, #a4e246a6, $green);
+  }
+}
+@keyframes checked-false {
+  0% {
+    background: linear-gradient(to top, #eeeeee, #bbbbbb);
+  }
+  100% {
+    background: linear-gradient(to top, #db1515a6, #db1515);
+    color: $white !important;
+  }
+}
+
+.progressBar {
+  display: flex;
+  width: 76%;
+  position: absolute;
+  top: 60%;
+  left: 39%;
+  transform: translate(-50%, -50%);
+  margin: 0 0 0 10%;
+}
+
+.icon {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  fill: none;
+  cursor: pointer;
+}
+
+.step {
+  flex-grow: 1;
+  position: relative;
+  &.end {
+    width: 0%;
+    flex-grow: 0;
+  }
+}
+
+.step-progress {
+  width: 100%;
+  height: 0.5em;
+  background: $yellow;
+  &.end {
+    width: 0%;
+    transform: scale(0);
+  }
+}
+.icon-wrapper {
+  text-align: center;
+  display: inline-block;
+}
+
+.roll-progress.done .step-progress:not(.end):after {
+  position: absolute;
+  content: "";
+  height: 0.5em;
+  width: 0;
+  background-color: $green;
+  animation: growLine 1s linear forwards;
+}
+
+.icon-checkmark {
+  position: absolute;
+  top: -0.55em;
+  left: -0.125em;
+  border: 0.125em solid $yellow;
+  background: $black;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  padding: 0.125em;
+  transition: all 0.25s linear;
+  cursor: pointer;
+}
+.step.done .icon-checkmark {
+  background: $fillBG;
+  border-color: $fillBG;
+}
+
+.icon-checkmark .path1 {
+  stroke: $empty;
+  stroke-width: 4;
+  stroke-linecap: square;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  fill: empty;
+}
+.step.done .icon-checkmark .path1 {
+  animation: dash 5s linear forwards;
+  stroke: $yellow;
+}
+
+.step-text {
+  position: relative;
+  font-size: 1.5rem;
+  margin-left: 20%;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: $empty;
+  margin-top: 0;
+  padding-top: 15px;
+  &.end {
+    margin-left: -50%;
+  }
+}
+.step.done .step-text {
+  animation: answered 0.5s linear forwards;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes growLine {
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes answered {
+  to {
+    color: $green;
+  }
+}

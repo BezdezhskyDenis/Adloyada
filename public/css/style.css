@@ -639,6 +639,411 @@ img.hover-shadow {
      object-fit: contain;
 }
 
+.container {
+  margin-top: 100px;
+}
+
+.purimGame {
+  background-color: #f2cc0f;
+  border-radius: 25px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: 800px;
+  width: 80%;
+  margin-inline: auto;
+}
+.purimGame .hidden {
+  width: 0;
+  height: 0;
+  scale: 0;
+}
+.purimGame .show {
+  scale: 1;
+  width: auto;
+  height: auto;
+  transition: scale 0.5s;
+}
+.purimGame .scoreBar {
+  position: relative;
+  left: 2.5%;
+  height: 100px;
+  width: 105%;
+  border-radius: 25px;
+  box-shadow: 0 5px 5px 5px #931997;
+  border: 2px solid #9453a6;
+  background: #9453a6;
+  background: linear-gradient(to top, #d053a6, #9453a6);
+}
+.purimGame .scoreBar .nextQ,
+.purimGame .scoreBar .prevQ {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  padding: 30px 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+}
+.purimGame .scoreBar .nextQ:hover,
+.purimGame .scoreBar .prevQ:hover {
+  opacity: 0.8;
+}
+.purimGame .scoreBar .prevQ {
+  left: 0;
+}
+.purimGame .scoreBar .prevQ:hover {
+  -webkit-animation: slide-left 1s both infinite;
+          animation: slide-left 1s both infinite;
+}
+.purimGame .scoreBar .nextQ:hover {
+  -webkit-animation: slide-right 1s both infinite;
+          animation: slide-right 1s both infinite;
+}
+.purimGame .main {
+  padding-top: 80px;
+}
+.purimGame .main .triviaTitle {
+  width: 80%;
+  margin-inline: auto;
+  margin-bottom: 80px;
+}
+.purimGame .main .triviaTitle .questionTitle {
+  text-shadow: gray 3px 3px;
+  font-weight: 400;
+}
+.purimGame .main .triviaQuestions {
+  text-align: center;
+}
+.purimGame .main .triviaQuestions .questionBody label {
+  display: flex;
+  width: 90%;
+  height: 120px;
+  padding: 8px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+}
+.purimGame .main .triviaQuestions .questionBody label.btn {
+  color: #0d0d0d !important;
+  text-shadow: 1px 2px 20px white;
+  border: 2px solid #0d0d0d;
+  border-radius: 10px;
+  background: linear-gradient(to top, #eeeeee, #bbbbbb);
+  vertical-align: middle;
+}
+.purimGame .main .triviaQuestions .questionBody label:hover {
+  -webkit-animation: background-switch-black 0.5s both;
+          animation: background-switch-black 0.5s both;
+  color: #f2f2f2 !important;
+}
+.purimGame .main .triviaQuestions .questionBody button {
+  display: flex;
+  width: 90%;
+  height: 120px;
+  padding: 8px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  margin-inline: auto;
+}
+.purimGame .main .triviaQuestions .questionBody button.btn {
+  color: #0d0d0d !important;
+  text-shadow: 1px 2px 20px white;
+  border: 2px solid #0d0d0d;
+  border-radius: 10px;
+  background: linear-gradient(to top, #eeeeee, #bbbbbb);
+  vertical-align: middle;
+}
+.purimGame .main .triviaQuestions .questionBody button:hover {
+  -webkit-animation: background-switch-black 0.5s both;
+          animation: background-switch-black 0.5s both;
+  color: #f2f2f2 !important;
+}
+.purimGame .main .triviaQuestions .checkedTrue {
+  background: linear-gradient(to top, rgba(164, 226, 70, 0.6509803922), #8cbf3f);
+  -webkit-animation: checked-true 0.5s 2 both;
+          animation: checked-true 0.5s 2 both;
+}
+.purimGame .main .triviaQuestions .checkedFalse {
+  background: linear-gradient(to top, rgba(219, 21, 21, 0.6509803922), #db1515);
+  color: #f2f2f2 !important;
+  -webkit-animation: checked-false 0.5s 2 both;
+          animation: checked-false 0.5s 2 both;
+}
+.purimGame .main .triviaQuestions .answered {
+  position: absolute;
+  background-color: red;
+  content: "";
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+@-webkit-keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-left {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes slide-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-right {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@-webkit-keyframes background-switch-black {
+  0% {
+    transform: scale(1);
+    background: linear-gradient(to top, #eeeeee, #bbbbbb);
+  }
+  20% {
+    background: linear-gradient(to top, #bbbbbb, #999999);
+  }
+  40% {
+    background: linear-gradient(to top, #999999, #666666);
+  }
+  60% {
+    background: linear-gradient(to top, #666666, #333333);
+  }
+  80% {
+    background: linear-gradient(to top, #333333, rgba(13, 13, 13, 0.6509803922));
+  }
+  100% {
+    transform: scale(0.95);
+    background: linear-gradient(to top, rgba(13, 13, 13, 0.6509803922), #0d0d0d);
+  }
+}
+@keyframes background-switch-black {
+  0% {
+    transform: scale(1);
+    background: linear-gradient(to top, #eeeeee, #bbbbbb);
+  }
+  20% {
+    background: linear-gradient(to top, #bbbbbb, #999999);
+  }
+  40% {
+    background: linear-gradient(to top, #999999, #666666);
+  }
+  60% {
+    background: linear-gradient(to top, #666666, #333333);
+  }
+  80% {
+    background: linear-gradient(to top, #333333, rgba(13, 13, 13, 0.6509803922));
+  }
+  100% {
+    transform: scale(0.95);
+    background: linear-gradient(to top, rgba(13, 13, 13, 0.6509803922), #0d0d0d);
+  }
+}
+@-webkit-keyframes checked-true {
+  0% {
+    background: linear-gradient(to top, #eeeeee, #bbbbbb);
+  }
+  100% {
+    background: linear-gradient(to top, rgba(164, 226, 70, 0.6509803922), #8cbf3f);
+  }
+}
+@keyframes checked-true {
+  0% {
+    background: linear-gradient(to top, #eeeeee, #bbbbbb);
+  }
+  100% {
+    background: linear-gradient(to top, rgba(164, 226, 70, 0.6509803922), #8cbf3f);
+  }
+}
+@-webkit-keyframes checked-false {
+  0% {
+    background: linear-gradient(to top, #eeeeee, #bbbbbb);
+  }
+  100% {
+    background: linear-gradient(to top, rgba(219, 21, 21, 0.6509803922), #db1515);
+    color: #f2f2f2 !important;
+  }
+}
+@keyframes checked-false {
+  0% {
+    background: linear-gradient(to top, #eeeeee, #bbbbbb);
+  }
+  100% {
+    background: linear-gradient(to top, rgba(219, 21, 21, 0.6509803922), #db1515);
+    color: #f2f2f2 !important;
+  }
+}
+.progressBar {
+  display: flex;
+  width: 76%;
+  position: absolute;
+  top: 60%;
+  left: 39%;
+  transform: translate(-50%, -50%);
+  margin: 0 0 0 10%;
+}
+
+.icon {
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  fill: none;
+  cursor: pointer;
+}
+
+.step {
+  flex-grow: 1;
+  position: relative;
+}
+.step.end {
+  width: 0%;
+  flex-grow: 0;
+}
+
+.step-progress {
+  width: 100%;
+  height: 0.5em;
+  background: #f2cc0f;
+}
+.step-progress.end {
+  width: 0%;
+  transform: scale(0);
+}
+
+.icon-wrapper {
+  text-align: center;
+  display: inline-block;
+}
+
+.roll-progress.done .step-progress:not(.end):after {
+  position: absolute;
+  content: "";
+  height: 0.5em;
+  width: 0;
+  background-color: #8cbf3f;
+  -webkit-animation: growLine 1s linear forwards;
+          animation: growLine 1s linear forwards;
+}
+
+.icon-checkmark {
+  position: absolute;
+  top: -0.55em;
+  left: -0.125em;
+  border: 0.125em solid #f2cc0f;
+  background: #0d0d0d;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 50%;
+  padding: 0.125em;
+  transition: all 0.25s linear;
+  cursor: pointer;
+}
+
+.step.done .icon-checkmark {
+  background: #0087b3;
+  border-color: #0087b3;
+}
+
+.icon-checkmark .path1 {
+  stroke: #aaa;
+  stroke-width: 4;
+  stroke-linecap: square;
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  fill: empty;
+}
+
+.step.done .icon-checkmark .path1 {
+  -webkit-animation: dash 5s linear forwards;
+          animation: dash 5s linear forwards;
+  stroke: #f2cc0f;
+}
+
+.step-text {
+  position: relative;
+  font-size: 1.5rem;
+  margin-left: 20%;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #aaa;
+  margin-top: 0;
+  padding-top: 15px;
+}
+.step-text.end {
+  margin-left: -50%;
+}
+
+.step.done .step-text {
+  -webkit-animation: answered 0.5s linear forwards;
+          animation: answered 0.5s linear forwards;
+}
+
+@-webkit-keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes growLine {
+  to {
+    width: 100%;
+  }
+}
+@keyframes growLine {
+  to {
+    width: 100%;
+  }
+}
+@-webkit-keyframes answered {
+  to {
+    color: #8cbf3f;
+  }
+}
+@keyframes answered {
+  to {
+    color: #8cbf3f;
+  }
+}
 h1,
 h2,
 h3,
