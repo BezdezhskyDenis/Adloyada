@@ -1,16 +1,16 @@
-$("li").on("mouseover touchend touchstart tap click", function () {
+$("li").on("mouseover", function () {
   $(this).addClass("border rounded-pill");
   $(this).attr("aria-expanded", "true");
   $(this).children().addClass("show");
 });
 
-$("li").on("mouseout touchend touchstart tap click", function () {
+$("li").on("mouseout", function () {
   $(this).removeClass("border rounded-pill");
   $(this).attr("aria-expanded", "false");
   $(this).children().removeClass("show");
 });
 
-$("a").on("mouseover touchend touchstart tap click", function () {
+$("a").on("touchend touchstart tap click", function () {
   let userChose = $(this).attr("name");
   switch (userChose) {
     case "adloyada":
