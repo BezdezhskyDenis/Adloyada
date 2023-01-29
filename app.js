@@ -1,10 +1,10 @@
-$("li").on("mouseover touchstart tap", function () {
+$("li").on("mouseover tap", function () {
   $(this).addClass("border rounded-pill");
   $(this).attr("aria-expanded", "true");
   $(this).children().addClass("show");
 });
 
-$("li").on("mouseout touchstart tap", function () {
+$("li").on("mouseout tap", function () {
   $(this).removeClass("border rounded-pill");
   $(this).attr("aria-expanded", "false");
   $(this).children().removeClass("show");
